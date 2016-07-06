@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_headpic_2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/headpic"/>
+
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item1_2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_headpic_2"
+        android:layout_alignTop="@id/iv_headpic_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李小璐"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item2_2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_headpic_2"
+        android:layout_alignBottom="@id/iv_headpic_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我还在糖果等你"
+        android:textSize="15dp"/>
+
+<LinearLayout
+    android:id="@+id/ll_body_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_alignLeft="@id/tv_list_item2_2"
+    android:orientation="horizontal"
+    android:layout_below="@id/tv_list_item2_2">
+
+    <ImageView
+        android:id="@+id/iv_body_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/body"/>
+    <ImageView
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/bandpicshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#464648"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/ll_body_2"
+        android:layout_below="@id/ll_body_2"
+        android:id="@+id/tv_list_item3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.56"/>
+
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item4_2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_list_item3_2"
+        android:layout_below="@id/ll_body_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KM"/>
+
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item5_2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_list_item4_2"
+        android:layout_below="@id/ll_body_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16:20"/>
+
+    <ImageButton
+        android:id="@+id/ib_like_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/like"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_list_item3_2"
+        android:layout_marginRight="80dp"/>
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item6_2"
+        android:layout_alignBottom="@id/ib_like_2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"/>
+    <ImageButton
+        android:id="@+id/ib_commet_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/commet"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_list_item3_2"
+        android:layout_marginRight="40dp"/>
+    <TextView
+        android:id="@+id/tv_list_item7_2"
+        android:textColor="#464648"
+        android:layout_alignBottom="@id/ib_commet_2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"/>
+
+
+</RelativeLayout>

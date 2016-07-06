@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.geminno.app.myplaymusic.PolicyActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/actiontitle"
+        android:text="隐私保护协议"/>
+
+    <Button
+        android:onClick="btn_return_policy"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/arrow"
+        android:paddingTop="15dp"
+        android:background="@null" />
+
+    <TextView
+        android:id="@id/tv1"
+        android:layout_below="@id/tv"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="玩乐儿隐私保护协议"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_below="@id/tv1"
+        android:id="@+id/tv_policy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

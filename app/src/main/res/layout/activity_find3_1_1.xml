@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="北京后海大鲨鱼胡同1009号"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/bg"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/iv_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导航"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:src="@drawable/map"/>
+
+</LinearLayout>

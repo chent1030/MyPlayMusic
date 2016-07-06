@@ -1,0 +1,374 @@
+[
+    {
+        "outputFile": "E:\\Android\\day18\\SlidingMenuTest\\library_pulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-pt\\values-pt.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 75,
+                    "endOffset": 126
+                },
+                "from": {
+                    "file": "E:\\Android\\day18\\SlidingMenuTest\\library_pulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 75,
+                        "endOffset": 126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 131,
+                    "endColumn": 72,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\Android\\day18\\SlidingMenuTest\\library_pulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 72,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 83,
+                    "endOffset": 283
+                },
+                "from": {
+                    "file": "E:\\Android\\day18\\SlidingMenuTest\\library_pulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 204,
+                        "endColumn": 83,
+                        "endOffset": 283
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "F:\\AndroidStudioProjects\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-pt\\values-pt.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 75,
+                    "endOffset": 126
+                },
+                "from": {
+                    "file": "F:\\AndroidStudioProjects\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 75,
+                        "endOffset": 126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 131,
+                    "endColumn": 72,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "F:\\AndroidStudioProjects\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 72,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 83,
+                    "endOffset": 283
+                },
+                "from": {
+                    "file": "F:\\AndroidStudioProjects\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 204,
+                        "endColumn": 83,
+                        "endOffset": 283
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\AndroidProject\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-pt\\values-pt.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 75,
+                    "endOffset": 126
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 75,
+                        "endOffset": 126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 131,
+                    "endColumn": 72,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 72,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 83,
+                    "endOffset": 283
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 204,
+                        "endColumn": 83,
+                        "endOffset": 283
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\865780039\\FileRecv\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-pt\\values-pt.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 75,
+                    "endOffset": 126
+                },
+                "from": {
+                    "file": "E:\\865780039\\FileRecv\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 75,
+                        "endOffset": 126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 131,
+                    "endColumn": 72,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\865780039\\FileRecv\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 72,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 83,
+                    "endOffset": 283
+                },
+                "from": {
+                    "file": "E:\\865780039\\FileRecv\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 204,
+                        "endColumn": 83,
+                        "endOffset": 283
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\WorkSpace-android\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-pt\\values-pt.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 75,
+                    "endOffset": 126
+                },
+                "from": {
+                    "file": "E:\\WorkSpace-android\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 75,
+                        "endOffset": 126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 131,
+                    "endColumn": 72,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\WorkSpace-android\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 72,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 83,
+                    "endOffset": 283
+                },
+                "from": {
+                    "file": "E:\\WorkSpace-android\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 204,
+                        "endColumn": 83,
+                        "endOffset": 283
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-pt\\values-pt.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 75,
+                    "endOffset": 126
+                },
+                "from": {
+                    "file": "C:\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 75,
+                        "endOffset": 126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 131,
+                    "endColumn": 72,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "C:\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 72,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 83,
+                    "endOffset": 283
+                },
+                "from": {
+                    "file": "C:\\MyPlayMusic\\library_pulltorefresh11\\build\\intermediates\\bundles\\debug\\res\\values-pt\\values-pt.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 204,
+                        "endColumn": 83,
+                        "endOffset": 283
+                    }
+                }
+            }
+        ]
+    }
+]

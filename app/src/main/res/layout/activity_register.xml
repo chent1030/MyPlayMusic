@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geminno.app.myplaymusic.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_reg"
+        style="@style/actiontitle"
+        android:text="注册"/>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/arrow"
+        android:paddingBottom="20dp"
+        android:background="@null" />
+
+    <EditText
+        android:background="@drawable/login"
+        android:singleLine="true"
+        android:id="@+id/et1"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tv_reg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入手机号"/>
+
+    <EditText
+        android:background="@drawable/login"
+        android:id="@+id/et2"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入验证码"/>
+
+    <Button
+        android:background="@drawable/forgetpassword"
+        android:layout_alignRight="@id/et1"
+        android:layout_alignBottom="@id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:text="验证码"/>
+
+    <EditText
+        android:background="@drawable/login"
+        android:inputType="textPassword"
+        android:id="@+id/et3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入密码（6-12个字符）"/>
+
+    <EditText
+        android:background="@drawable/login"
+        android:inputType="textPassword"
+        android:id="@+id/et4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/et3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请再次确认密码"/>
+
+    <EditText
+        android:background="@drawable/login"
+        android:inputType="textPassword"
+        android:id="@+id/et5"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/et4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入昵称（不可包含特殊字符）"/>
+
+    <Button
+        android:background="@drawable/forgetpassword"
+        android:id="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et5"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:text="注册"/>
+
+    <RelativeLayout
+        android:layout_below="@id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意"/>
+
+        <TextView
+            android:clickable="true"
+            android:layout_alignTop="@id/cb"
+            android:id="@+id/btn_protocol"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/lineshape"
+            android:text="使用协议"
+            android:textColor="#FF6091"
+            android:gravity="center"
+            android:background="@null" />
+        <View
+            android:layout_below="@id/btn_protocol"
+            android:layout_width="55dp"
+            android:layout_height="1dp"
+            android:background="#FF6091"
+            android:layout_alignLeft="@id/btn_protocol"/>
+
+        <TextView
+            android:id="@+id/tv_new"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/btn_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="和"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:clickable="true"
+            android:layout_alignTop="@id/cb"
+            android:id="@+id/btn_policy"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/tv_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐私政策"
+            android:textColor="#FF6091"
+            android:gravity="center"
+            android:background="@null" />
+        <View
+            android:layout_below="@id/btn_policy"
+            android:layout_width="55dp"
+            android:layout_height="1dp"
+            android:background="#FF6091"
+            android:layout_alignLeft="@id/btn_policy"/>
+    </RelativeLayout>
+
+</RelativeLayout>

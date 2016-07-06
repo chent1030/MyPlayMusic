@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geminno.app.myplaymusic.me_activity.PerformanceLevelActivity">
+    <TextView
+        android:id="@+id/tv_musicage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="音乐年龄"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#555555"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_musicage"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:layout_marginTop="15dp"
+        android:background="@null"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"/>
+
+    <RadioGroup
+        android:layout_below="@id/tv_musicage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#BAB5BA">
+        <RadioButton
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="1-3年"
+            android:button="@null"
+            android:textColor="@drawable/textcolor1"
+            android:background="#9CCC65"/>
+        <RadioButton
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="3-5年"
+            android:button="@null"
+            android:textColor="@drawable/textcolor1"
+            android:background="#29B6F6"/>
+        <RadioButton
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="5-8年"
+            android:button="@null"
+            android:textColor="@drawable/textcolor1"
+            android:background="#7E57C2"/>
+        <RadioButton
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="8年以上"
+            android:button="@null"
+            android:textColor="@drawable/textcolor1"
+            android:background="#FF7043"/>
+
+
+
+    </RadioGroup>
+
+
+</RelativeLayout>

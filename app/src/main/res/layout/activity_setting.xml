@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geminno.app.myplaymusic.me_activity.SettingActivity">
+    <TextView
+        android:id="@+id/tv_setting_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="设置"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#555555"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_setting_1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:layout_marginTop="15dp"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:background="#9EA1A3"
+        android:layout_below="@id/tv_setting_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/account_safe"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="账号与安全"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <ImageButton
+                android:id="@+id/ib_setting_2"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null" />
+            <TextView
+                android:layout_alignBottom="@id/account_safe"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/msg_warn"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="消息提醒"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <ImageButton
+                android:id="@+id/ib_setting_3"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null" />
+
+            <TextView
+                android:layout_alignBottom="@id/msg_warn"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/chatbg"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="聊天背景"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <ImageButton
+                android:id="@+id/ib_setting_4"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null" />
+
+            <TextView
+                android:layout_alignBottom="@id/chatbg"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/blacklist"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="黑名单"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <ImageButton
+                android:id="@+id/ib_setting_5"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null" />
+
+            <TextView
+                android:layout_alignBottom="@id/blacklist"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/clearcache"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="清理缓存"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <ImageButton
+                android:id="@+id/ib_setting_6"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null" />
+
+            <TextView
+                android:layout_alignBottom="@id/clearcache"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/logoff"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="退出登录"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:layout_alignBottom="@id/logoff"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

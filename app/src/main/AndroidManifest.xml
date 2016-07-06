@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geminno.app.myplaymusic">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FindPasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ProtoActivity" />
+        <activity android:name=".PolicyActivity" />
+        <activity android:name=".NearActivity" />
+        <activity android:name=".me_activity.Me_infoActivity" />
+        <activity android:name=".me_activity.MyMusicCircleActivity" />
+        <activity android:name=".me_activity.CreateBandActivity" />
+        <activity android:name=".me_activity.SettingActivity" />
+        <activity android:name=".me_activity.HelpActivity" />
+        <activity android:name=".firendcircle_activity.DynamicDetailsActivity_personcircle" />
+        <activity android:name=".firendcircle_activity.DynamicDetailsActivity_bandcircle" />
+        <activity android:name=".me_activity.NameActivity" />
+        <activity android:name=".me_activity.IdiographActivity" />
+        <activity android:name=".me_activity.FamilarinstrumentActivity" />
+        <activity android:name=".me_activity.MusicStyleActivity" />
+        <activity android:name=".me_activity.ProductConnectionActivity" />
+        <activity android:name=".me_activity.PerformanceLevelActivity" />
+        <activity android:name=".me_activity.SexActivity" />
+        <activity android:name=".me_activity.AgeActivity" />
+        <activity android:name=".me_activity.HomeTownActivity" />
+        <activity android:name=".me_activity.ProfessionActivity" />
+        <activity android:name=".find_activity.Find2_1_1Activity" />
+        <activity android:name=".find_activity.Find2_1Activity" />
+        <activity android:name=".find_activity.Find2_2_1Activity" />
+        <activity android:name=".find_activity.Find2_2Activity" />
+        <activity android:name=".find_activity.Find2Activity" />
+        <activity android:name=".find_activity.Find3_1_1Activity" />
+        <activity android:name=".find_activity.Find3_1Activity" />
+        <activity android:name=".find_activity.Find3Activity" />
+        <activity android:name=".me_activity.AcountSafeActivity"></activity>
+    </application>
+
+</manifest>

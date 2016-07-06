@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#363636">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="发现"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/bg"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menu3"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_img"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="170dp" />
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/show_1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/show_1"
+
+        />
+    <TextView
+        android:id="@+id/show_bg1"
+        android:text="活动信息"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@mipmap/show_bg"
+      />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     >
+    <ImageView
+            android:id="@+id/show_2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/show_2"
+            android:layout_alignParentBottom="true"
+    />
+    <TextView
+        android:id="@+id/show_bg2"
+        android:text="排练场地信息"
+        android:textColor="#ffffff"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@mipmap/show_bg"
+        android:layout_alignTop="@+id/show_2"
+
+       />
+
+    </RelativeLayout>
+</LinearLayout>

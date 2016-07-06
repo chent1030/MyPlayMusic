@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firendcircle_activity.DynamicDetailsActivity_personcircle">
+
+    <TextView
+        android:id="@+id/tv_dynamicdetail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="动态详情"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#555555"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_return_dynamicdetail"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:layout_marginTop="15dp"
+        android:background="@null"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamicdetail"
+        android:layout_below="@id/tv_dynamicdetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    <ImageView
+        android:id="@+id/iv_headpic_dynamicdetail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/headpic"/>
+
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item1_dynamicdetail"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_headpic_dynamicdetail"
+        android:layout_alignTop="@id/iv_headpic_dynamicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李小璐"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item2_dynamicdetail"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_headpic_dynamicdetail"
+        android:layout_alignBottom="@id/iv_headpic_dynamicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我还在糖果等你"
+        android:textSize="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_body_dynamicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/tv_list_item2_dynamicdetail"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_list_item2_dynamicdetail">
+
+        <ImageView
+            android:id="@+id/iv_body_dynamicdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/body"/>
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/bandpicshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#464648"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/ll_body_dynamicdetail"
+        android:layout_below="@id/ll_body_dynamicdetail"
+        android:id="@+id/tv_list_item3_dynamicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.56"/>
+
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item4_dynamicdetail"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_list_item3_dynamicdetail"
+        android:layout_below="@id/ll_body_dynamicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KM"/>
+
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item5_dynamicdetail"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_list_item4_dynamicdetail"
+        android:layout_below="@id/ll_body_dynamicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16:20"/>
+
+    <ImageButton
+        android:id="@+id/ib_like_dynamicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/like"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_list_item3_dynamicdetail"
+        android:layout_marginRight="80dp"/>
+    <TextView
+        android:textColor="#464648"
+        android:id="@+id/tv_list_item6_dynamicdetail"
+        android:layout_alignBottom="@id/ib_like_dynamicdetail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"/>
+    <ImageButton
+        android:id="@+id/ib_commet_dynamicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/commet"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_list_item3_dynamicdetail"
+        android:layout_marginRight="40dp"/>
+    <TextView
+        android:id="@+id/tv_list_item7_dynamicdetail"
+        android:textColor="#464648"
+        android:layout_alignBottom="@id/ib_commet_dynamicdetail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_dynamicdetail"
+        android:layout_below="@id/rl_dynamicdetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#555555">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="发表评论" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:background="@null"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</RelativeLayout>

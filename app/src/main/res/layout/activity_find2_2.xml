@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="排练信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/bg"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/iv_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_back"
+            android:layout_toEndOf="@+id/iv_back" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share"
+
+            android:id="@+id/share"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="后海大鲨鱼排练室信息，后海大鲨鱼排练室信息，后海大鲨鱼排练室信息"/>
+    <LinearLayout
+        android:id="@+id/ll_actinfo_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/fk"
+                android:id="@+id/iv_imageView"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_imageView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间：11-12 17：12"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间：11-12 20：32"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/house"
+                android:layout_alignBottom="@+id/tv_distance"
+                android:layout_toLeftOf="@+id/tv_distance"
+                android:layout_toStartOf="@+id/tv_distance"
+                android:id="@+id/imageView" />
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.01KM"
+                android:layout_alignBottom="@+id/iv_imageView"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+            <ImageView
+                android:id="@+id/iv_map_mark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/map_marker"
+                android:layout_above="@+id/tv_distance"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京后海大鲨鱼胡同1009号"
+                android:textSize="12sp"
+                android:layout_alignBottom="@+id/iv_prac_right"
+                android:layout_toRightOf="@+id/iv_map_mark"
+                android:layout_toEndOf="@+id/iv_map_mark" />
+
+            <ImageView
+                android:id="@+id/iv_prac_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:layout_above="@+id/imageView"
+                android:layout_alignRight="@+id/tv_distance"
+                android:layout_alignEnd="@+id/tv_distance" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="排练详情"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:background="#f0f0f0"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="如果你无法简洁的表达你的想法，那只说明你还不够了解他。"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--阿尔伯特.爱因斯坦"
+            />
+        <Button
+            android:id="@+id/btn_baoming"
+            android:layout_marginTop="40dp"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="我要报名"
+            android:textSize="18sp"
+            android:background="@drawable/circle_pic"/>
+
+    </LinearLayout>
+</LinearLayout>
+

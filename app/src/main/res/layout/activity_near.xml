@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.geminno.app.myplaymusic.NearActivity">
+
+<FrameLayout
+    android:id="@+id/fl_near"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+</FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_near"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg">
+        <RadioButton
+            android:id="@+id/rb_near"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableBottom="@drawable/near"/>
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableBottom="@drawable/message"/>
+
+        <RadioButton
+            android:id="@+id/rb_friendcircle"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableBottom="@drawable/find"/>
+        <RadioButton
+            android:id="@+id/rb_find"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableBottom="@drawable/friend_circle"/>
+        <RadioButton
+            android:id="@+id/rb_me"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableBottom="@drawable/me"/>
+    </RadioGroup>
+</LinearLayout>

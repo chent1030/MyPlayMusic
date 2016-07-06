@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="拍照"
+        android:textSize="20sp"/>
+    <View
+        android:layout_below="@id/tv_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BBBBBB" />
+    <TextView
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_fromphone"
+        android:layout_below="@id/tv_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="从手机相册选择"
+        android:textSize="20sp"/>
+    <View
+        android:layout_below="@id/tv_fromphone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BBBBBB" />
+    <TextView
+        android:clickable="true"
+        android:id="@+id/cancel_photo"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_fromphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_below="@id/cancel_photo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BBBBBB" />
+
+
+
+</RelativeLayout>

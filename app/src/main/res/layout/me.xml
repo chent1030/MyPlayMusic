@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_me"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="我"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/bg"
+        android:textColor="#ffffff"/>
+    <RelativeLayout
+        android:background="#202020"
+        android:layout_below="@id/tv_me"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_me"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#2E2E2E">
+            <ImageView
+                android:id="@+id/iv_me"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/me_head"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/tv_me_1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/iv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小武WW"
+                android:textSize="20dp"
+                android:textColor="#707070"/>
+
+            <TextView
+                android:id="@+id/tv_me_2"
+                android:layout_below="@id/tv_me_1"
+                android:layout_toRightOf="@id/iv_me"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩乐账号"
+                android:textColor="#434343"
+                android:textSize="15dp"/>
+
+            <ImageButton
+                android:id="@+id/ib_me_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:src="@drawable/tv_me_1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_me_1"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/rl_me"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="#2E2E2E"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_me_1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mymusiccircle"/>
+
+            <TextView
+                android:layout_toRightOf="@id/iv_me_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的音乐圈"
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:id="@+id/ib_me_2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_me_2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rl_me_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="#2E2E2E"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_me_2"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myband"/>
+
+            <TextView
+                android:layout_toRightOf="@id/iv_me_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的乐队"
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:id="@+id/ib_me_3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_me_3"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rl_me_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="#2E2E2E"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_me_3"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting"/>
+
+            <TextView
+                android:layout_toRightOf="@id/iv_me_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageButton
+                android:id="@+id/ib_me_4"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_me_4"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rl_me_3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="#2E2E2E"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_me_4"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help"/>
+
+            <TextView
+                android:layout_toRightOf="@id/iv_me_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帮助"
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageButton
+                android:id="@+id/ib_me_5"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tv_me_2"
+                android:background="@null"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

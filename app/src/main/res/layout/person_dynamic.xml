@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/iv_dyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head_me_info"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_dyn_1"
+        android:layout_alignTop="@id/iv_dyn"
+        android:layout_toRightOf="@id/iv_dyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chao"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_dyn_2"
+      android:layout_below="@id/tv_dyn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男"
+        android:layout_toRightOf="@id/iv_dyn"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_alignTop="@id/tv_dyn_2"
+        android:layout_toRightOf="@id/tv_dyn_2"
+        android:id="@+id/tv_dyn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="22"/>
+    <TextView
+        android:layout_alignTop="@id/tv_dyn_2"
+        android:layout_toRightOf="@id/tv_dyn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="岁"/>
+
+    <ImageView
+        android:id="@+id/iv_dyn_2"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/iv_dyn"
+        android:layout_below="@id/iv_dyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/picshare"/>
+
+    <TextView
+        android:id="@+id/tv_dyn_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="春眠不觉晓，处处问题鸟"
+        android:layout_toRightOf="@id/iv_dyn_2"
+        android:layout_alignTop="@id/iv_dyn_2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_dyn_4"
+        android:id="@+id/tv_dyn_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11月6"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

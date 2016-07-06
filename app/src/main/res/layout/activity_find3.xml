@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="排练场地信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/bg"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/iv_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_back"
+            android:layout_toEndOf="@+id/iv_back" />
+
+    </RelativeLayout>
+    <SearchView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaaaaa"
+        android:imeOptions="actionGo" />
+<LinearLayout
+    android:id="@+id/ll_actinfo_3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/fk"
+            android:id="@+id/iv_imageView"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后海大鲨鱼排练室"
+            android:layout_marginTop="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间：11-12 17：12"
+            android:layout_marginTop="10dp"
+             />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间：11-12 20：32"
+            android:layout_marginTop="10dp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="场地价格：100元"
+            android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/house"
+            android:layout_alignBottom="@+id/tv_distance"
+            android:layout_toLeftOf="@+id/tv_distance"
+            android:layout_toStartOf="@+id/tv_distance" />
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.01KM"
+            android:layout_alignBottom="@+id/iv_imageView"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/iv_prac_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tv_me_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/fk"
+            android:id="@+id/iv_imageView2"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_imageView2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后海大鲨鱼排练室"
+                android:layout_marginTop="14dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间：11-12 17：12"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间：11-12 20：32"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="场地价格：100元"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/house"
+            android:layout_alignBottom="@+id/tv_distance2"
+            android:layout_toLeftOf="@+id/tv_distance2"
+            android:layout_toStartOf="@+id/tv_distance2" />
+        <TextView
+            android:id="@+id/tv_distance2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.01KM"
+            android:layout_alignBottom="@+id/iv_imageView2"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tv_me_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/fk"
+            android:id="@+id/iv_imageView3"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_imageView3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后海大鲨鱼排练室"
+                android:layout_marginTop="14dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间：11-12 17：12"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间：11-12 20：32"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="场地价格：100元"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/house"
+            android:layout_alignBottom="@+id/tv_distance3"
+            android:layout_toLeftOf="@+id/tv_distance3"
+            android:layout_toStartOf="@+id/tv_distance3" />
+        <TextView
+            android:id="@+id/tv_distance3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.01KM"
+            android:layout_alignBottom="@+id/iv_imageView3"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tv_me_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/fk"
+            android:id="@+id/iv_imageView4"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_imageView4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后海大鲨鱼排练室"
+                android:layout_marginTop="14dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间：11-12 17：12"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间：11-12 20：32"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="场地价格：100元"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/house"
+            android:layout_alignBottom="@+id/tv_distance4"
+            android:layout_toLeftOf="@+id/tv_distance4"
+            android:layout_toStartOf="@+id/tv_distance4" />
+        <TextView
+            android:id="@+id/tv_distance4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.01KM"
+            android:layout_alignBottom="@+id/iv_imageView4"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tv_me_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

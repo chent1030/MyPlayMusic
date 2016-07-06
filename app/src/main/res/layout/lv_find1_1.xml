@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_actinfo_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/fk"
+                    android:id="@+id/iv_imageView1"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_imageView1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="50dp"
+                    android:id="@+id/linearLayout1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="livehouse(官方)"
+                        android:layout_marginTop="14dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动时间：09：00-20：00"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/house"
+                    android:layout_alignBottom="@+id/tv_distance1"
+                    android:layout_toLeftOf="@+id/tv_distance1"
+                    android:layout_toStartOf="@+id/tv_distance1"
+                    android:id="@+id/imageView1" />
+                <TextView
+                    android:id="@+id/tv_distance1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.01KM"
+                    android:layout_alignBottom="@+id/iv_imageView1"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_prac_right1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tv_me_2"
+                    android:layout_above="@+id/textView1"
+                    android:layout_alignRight="@+id/tv_distance1"
+                    android:layout_alignEnd="@+id/tv_distance1" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京市通州区马驹桥镇联东U谷中区B西三层"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:layout_toEndOf="@+id/textView1"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址："
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_alignLeft="@+id/linearLayout1"
+                    android:layout_alignStart="@+id/linearLayout1"
+                    android:id="@+id/textView1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/fk"
+                    android:id="@+id/iv_imageView2"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_imageView2"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="50dp"
+                    android:id="@+id/linearLayout2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="livehouse"
+                        android:layout_marginTop="14dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动时间：09：00-20：00"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/house"
+                    android:layout_alignBottom="@+id/tv_distance2"
+                    android:layout_toLeftOf="@+id/tv_distance2"
+                    android:layout_toStartOf="@+id/tv_distance2"
+                    android:id="@+id/imageView2" />
+                <TextView
+                    android:id="@+id/tv_distance2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.01KM"
+                    android:layout_alignBottom="@+id/iv_imageView2"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_prac_right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tv_me_2"
+                    android:layout_above="@+id/textView2"
+                    android:layout_alignRight="@+id/tv_distance2"
+                    android:layout_alignEnd="@+id/tv_distance2" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京市通州区马驹桥镇联东U谷中区B西三层"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:layout_toEndOf="@+id/textView2"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址："
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_alignLeft="@+id/linearLayout2"
+                    android:layout_alignStart="@+id/linearLayout2"
+                    android:id="@+id/textView2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/fk"
+                    android:id="@+id/iv_imageView3"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_imageView3"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="50dp"
+                    android:id="@+id/linearLayout3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="livehouse"
+                        android:layout_marginTop="14dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动时间：09：00-20：00"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/house"
+                    android:layout_alignBottom="@+id/tv_distance3"
+                    android:layout_toLeftOf="@+id/tv_distance3"
+                    android:layout_toStartOf="@+id/tv_distance3"
+                    android:id="@+id/imageView3" />
+                <TextView
+                    android:id="@+id/tv_distance3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.01KM"
+                    android:layout_alignBottom="@+id/iv_imageView3"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_prac_right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tv_me_2"
+                    android:layout_above="@+id/textView3"
+                    android:layout_alignRight="@+id/tv_distance3"
+                    android:layout_alignEnd="@+id/tv_distance3" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京市通州区马驹桥镇联东U谷中区B西三层"
+                    android:layout_below="@+id/linearLayout3"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:layout_toEndOf="@+id/textView3"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址："
+                    android:layout_below="@+id/linearLayout3"
+                    android:layout_alignLeft="@+id/linearLayout3"
+                    android:layout_alignStart="@+id/linearLayout3"
+                    android:id="@+id/textView3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/fk"
+                    android:id="@+id/iv_imageView4"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_imageView4"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="50dp"
+                    android:id="@+id/linearLayout4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="livehouse"
+                        android:layout_marginTop="14dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动时间：09：00-20：00"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/house"
+                    android:layout_alignBottom="@+id/tv_distance4"
+                    android:layout_toLeftOf="@+id/tv_distance4"
+                    android:layout_toStartOf="@+id/tv_distance4"
+                    android:id="@+id/imageView4" />
+                <TextView
+                    android:id="@+id/tv_distance4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.01KM"
+                    android:layout_alignBottom="@+id/iv_imageView4"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_prac_right4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tv_me_2"
+                    android:layout_above="@+id/textView4"
+                    android:layout_alignRight="@+id/tv_distance4"
+                    android:layout_alignEnd="@+id/tv_distance4" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京市通州区马驹桥镇联东U谷中区B西三层"
+                    android:layout_below="@+id/linearLayout4"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:layout_toEndOf="@+id/textView4"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址："
+                    android:layout_below="@+id/linearLayout4"
+                    android:layout_alignLeft="@+id/linearLayout4"
+                    android:layout_alignStart="@+id/linearLayout4"
+                    android:id="@+id/textView4" />
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
