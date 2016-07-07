@@ -31,7 +31,7 @@
         android:layout_marginTop="15dp"
         android:background="@null"/>
 
-    <RadioGroup
+    <LinearLayout
         android:id="@+id/rg_musicstyle_1"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="20dp"
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -50,7 +50,7 @@
             android:layout_height="35dp"
             android:text="摇滚"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
 
             android:gravity="center"
             android:background="@drawable/login"
@@ -61,7 +61,7 @@
             android:layout_height="35dp"
             android:text="朋克"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -71,7 +71,7 @@
             android:layout_height="35dp"
             android:text="金属"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -82,9 +82,9 @@
             android:text="电子"
             android:textColor="@drawable/textcolor"/>
 
-    </RadioGroup>
+    </LinearLayout>
 
-    <RadioGroup
+    <LinearLayout
         android:id="@+id/rg_musicstyle_2"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="20dp"
@@ -93,7 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -103,7 +103,7 @@
             android:layout_height="35dp"
             android:text="布利斯"
             android:textColor="@drawable/textcolor" />
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -113,7 +113,7 @@
             android:layout_height="35dp"
             android:text="雷鬼"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -123,7 +123,7 @@
             android:layout_height="35dp"
             android:text="乡村"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -134,9 +134,9 @@
             android:text="RB"
             android:textColor="@drawable/textcolor"/>
 
-    </RadioGroup>
+    </LinearLayout>
 
-    <RadioGroup
+    <LinearLayout
         android:id="@+id/rg_musicstyle_3"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="20dp"
@@ -146,7 +146,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -157,7 +157,7 @@
             android:text="古典"
             android:textColor="@drawable/textcolor"/>
 
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -167,7 +167,7 @@
             android:layout_height="35dp"
             android:text="民谣"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -177,7 +177,7 @@
             android:layout_height="35dp"
             android:text="hip-hop"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -187,7 +187,7 @@
             android:layout_height="35dp"
             android:text="其他"
             android:textColor="@drawable/textcolor"/>
-    </RadioGroup>
+    </LinearLayout>
 
     <Button
         android:background="@drawable/musicstyle"

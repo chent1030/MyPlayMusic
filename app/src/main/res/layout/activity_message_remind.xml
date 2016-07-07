@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geminno.app.myplaymusic.me_activity.MessageRemindActivity">
+    <TextView
+        android:id="@+id/tv_messageremind_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="消息提醒"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#555555"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_messageremind_1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:layout_marginTop="15dp"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:layout_below="@id/tv_messageremind_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#EEEEEE">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextmattern">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接受新消息提醒"/>
+
+            <CheckBox
+                android:id="@+id/cb_messageremind_1"
+                android:button="@drawable/button"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"/>
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/iv_messageremind_1"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lvc"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_messageremind"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextmattern">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通知显示消息详情"/>
+
+            <CheckBox
+                android:id="@+id/cb_messageremind_2"
+                android:button="@drawable/button"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"/>
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/iv_messageremind_2"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lvc"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_messageremind_2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rl_messageremind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭后，当收到玩儿乐消息时，通知将不显示发信和内容摘要。"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_remindmessage_1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextmattern">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="声音"/>
+
+            <CheckBox
+                android:id="@+id/cb_messageremind_3"
+                android:button="@drawable/button"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"/>
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/iv_messageremind_3"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lvc"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_messageremind_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextmattern">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="振动"/>
+
+            <CheckBox
+                android:id="@+id/cb_messageremind_4"
+                android:button="@drawable/button"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"/>
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/iv_messageremind_4"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lvc"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_messageremind_3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rl_messageremind_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当玩乐儿运行时，你可以设置是否需要声音或者振动。"/>
+        <RelativeLayout
+            android:id="@+id/rl_messageremind_3"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextmattern">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人动态照片更新"/>
+
+            <CheckBox
+                android:id="@+id/cb_messageremind_5"
+                android:button="@drawable/button"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"/>
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/iv_messageremind_5"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lvc"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rl_messageremind_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭后，个人动态更新照片时，界面下面不会再出现红点提示。"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
