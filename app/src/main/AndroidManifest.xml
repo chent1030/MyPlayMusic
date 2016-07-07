@@ -48,7 +48,8 @@
         <activity android:name=".find_activity.Find3_1_1Activity" />
         <activity android:name=".find_activity.Find3_1Activity" />
         <activity android:name=".find_activity.Find3Activity" />
-        <activity android:name=".me_activity.AcountSafeActivity"></activity>
+        <activity android:name=".me_activity.AcountSafeActivity" />
+        <activity android:name=".person_activity.PersonActivity"></activity>
     </application>
 
 </manifest>

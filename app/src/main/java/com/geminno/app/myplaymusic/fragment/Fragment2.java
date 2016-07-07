@@ -89,7 +89,7 @@ public class Fragment2 extends CommFragment {
                     popupWindow.setBackgroundDrawable(new BitmapDrawable());
                     popupWindow.setFocusable(true);
                 }
-                popupWindow.showAtLocation(view, Gravity.BOTTOM,0,0);
+                popupWindow.showAsDropDown(view,0,0);
             }
         });
     }
