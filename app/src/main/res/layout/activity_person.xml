@@ -62,6 +62,7 @@
             android:text="全部"/>
         <RadioButton
             android:id="@+id/rb2_screen_sex"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -73,6 +74,7 @@
             android:text="男"/>
         <RadioButton
             android:id="@+id/rb3_screen_sex"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -98,6 +100,7 @@
         android:text="乐器:"/>
     <CheckBox
         android:id="@+id/cb_screen_guitar"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_screen_text2"
@@ -107,6 +110,7 @@
         android:text="吉他"/>
     <CheckBox
         android:id="@+id/cb_screen_bass"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_screen_text2"
@@ -117,6 +121,7 @@
         android:text="贝斯"/>
     <CheckBox
         android:id="@+id/cb_screen_singer"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_bass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,6 +132,7 @@
         android:text="歌手"/>
     <CheckBox
         android:id="@+id/cb_screen_keyboards"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_singer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,6 +143,7 @@
         android:text="键盘类"/>
     <CheckBox
         android:id="@+id/cb_screen_drum"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cb_screen_guitar"
@@ -147,6 +154,7 @@
         android:text="架子鼓"/>
     <CheckBox
         android:id="@+id/cb_screen_violin"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_drum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -158,6 +166,7 @@
         android:text="提琴类"/>
     <CheckBox
         android:id="@+id/cb_screen_wind"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_violin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -169,6 +178,7 @@
         android:text="管乐类"/>
     <CheckBox
         android:id="@+id/cb_screen_national"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_wind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -180,6 +190,7 @@
         android:text="民乐类"/>
     <CheckBox
         android:id="@+id/cb_screen_other"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cb_screen_drum"
@@ -203,6 +214,7 @@
         android:text="音乐风格:"/>
     <CheckBox
         android:id="@+id/cb_screen_rock"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_screen_text3"
@@ -212,6 +224,7 @@
         android:text="摇滚"/>
     <CheckBox
         android:id="@+id/cb_screen_punk"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_screen_text3"
@@ -222,6 +235,7 @@
         android:text="朋克"/>
     <CheckBox
         android:id="@+id/cb_screen_metal"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_bass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -232,6 +246,7 @@
         android:text="金属"/>
     <CheckBox
         android:id="@+id/cb_screen_electron"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_singer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -242,6 +257,7 @@
         android:text="电子"/>
     <CheckBox
         android:id="@+id/cb_screen_ballad"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cb_screen_rock"
@@ -252,6 +268,7 @@
         android:text="民谣"/>
     <CheckBox
         android:id="@+id/cb_screen_randb"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_ballad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -263,6 +280,7 @@
         android:text="蓝调"/>
     <CheckBox
         android:id="@+id/cb_screen_country"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_randb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -274,6 +292,7 @@
         android:text="乡村"/>
     <CheckBox
         android:id="@+id/cb_screen_reggae"
+        android:textColor="@drawable/cb_check"
         android:layout_toRightOf="@id/cb_screen_country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -285,6 +304,7 @@
         android:text="雷鬼"/>
     <CheckBox
         android:id="@+id/cb_screen_bruce"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cb_screen_reggae"
@@ -295,6 +315,7 @@
         android:text="布鲁斯"/>
     <CheckBox
         android:id="@+id/cb_screen_hiphop"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cb_screen_reggae"
@@ -306,6 +327,7 @@
         android:text="hiphop"/>
     <CheckBox
         android:id="@+id/cb_screen_classical"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/cb_screen_hiphop"
@@ -317,6 +339,7 @@
         android:text="古典"/>
     <CheckBox
         android:id="@+id/cb_screen_otherstytle"
+        android:textColor="@drawable/cb_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cb_screen_reggae"
@@ -349,6 +372,7 @@
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rb1_band_y"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -357,6 +381,7 @@
             android:text="有"/>
         <RadioButton
             android:id="@+id/rb2_band_n"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -387,6 +412,7 @@
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rb1_online_y"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -395,6 +421,7 @@
             android:text="是"/>
         <RadioButton
             android:id="@+id/rb2_online_n"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -425,6 +452,7 @@
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rb1_instrument"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -433,6 +461,7 @@
             android:text="1-3年"/>
         <RadioButton
             android:id="@+id/rb2_instrument"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -450,6 +479,7 @@
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rb3_instrument"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -458,6 +488,7 @@
             android:text="5-8年"/>
         <RadioButton
             android:id="@+id/rb4_instrument"
+            android:textColor="@drawable/cb_check"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

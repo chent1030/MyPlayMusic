@@ -2,14 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageButton
-        android:id="@+id/ib_screen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/title_msg_left"
-        android:background="@null"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"/>
     <TextView
         android:id="@+id/tv_near"
         android:layout_width="wrap_content"
@@ -19,6 +11,14 @@
         android:textSize="20sp"
         android:background="@drawable/bg"
         android:textColor="#FFFFFF"/>
+    <ImageButton
+        android:id="@+id/ib_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu3"
+        android:background="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
     <RadioGroup
         android:id="@+id/rg_near"
         android:layout_width="match_parent"
