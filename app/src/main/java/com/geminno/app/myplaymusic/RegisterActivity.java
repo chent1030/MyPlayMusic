@@ -55,17 +55,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             case R.id.btn_protocol:
                 intent=new Intent(this,ProtoActivity.class);
                 startActivity(intent);
-                this.finish();
                 break;
             case R.id.btn_return:
-                intent=new Intent(this,MainActivity.class);
-                startActivity(intent);
                 this.finish();
                 break;
             case R.id.btn_policy:
                 intent=new Intent(this,PolicyActivity.class);
                 startActivity(intent);
-                this.finish();
                 break;
         }
     }

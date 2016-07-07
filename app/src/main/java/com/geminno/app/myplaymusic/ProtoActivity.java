@@ -22,8 +22,7 @@ public class ProtoActivity extends AppCompatActivity {
     }
 
     public void btn_return_proto(View view){
-        Intent intent=new Intent(this,RegisterActivity.class);
-        startActivity(intent);
+
 
         this.finish();
     }

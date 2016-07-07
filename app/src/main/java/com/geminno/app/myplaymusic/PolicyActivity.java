@@ -22,8 +22,6 @@ public class PolicyActivity extends AppCompatActivity {
     }
 
     public void btn_return_policy(View view){
-        Intent intent=new Intent(this,RegisterActivity.class);
-        startActivity(intent);
 
         this.finish();
 

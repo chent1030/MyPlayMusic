@@ -73,20 +73,20 @@ public class Fragment2_1 extends CommFragment {
             }
         });
         //item click event
-        RxAdapterView.itemClicks(msg_listview)
-                .subscribe(new Action1<Integer>() {
-                    @Override
-                    public void call(Integer integer) {
-
-                    }
-                });
+//        RxAdapterView.itemClicks(msg_listview)
+//                .subscribe(new Action1<Integer>() {
+//                    @Override
+//                    public void call(Integer integer) {
+//
+//                    }
+//                });
         //item long click
-        RxAdapterView.itemLongClicks(msg_listview)
-                .subscribe(new Action1<Integer>() {
-                    @Override
-                    public void call(Integer integer) {
-
-                    }
-                });
+//        RxAdapterView.itemLongClicks(msg_listview)
+//                .subscribe(new Action1<Integer>() {
+//                    @Override
+//                    public void call(Integer integer) {
+//
+//                    }
+//                });
     }
 }

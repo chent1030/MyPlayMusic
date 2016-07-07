@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent);
 
-                MainActivity.this.finish();
 
             }
         });
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent);
 
-                MainActivity.this.finish();
             }
         });
 
@@ -51,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(MainActivity.this,NearActivity.class);
                 startActivity(intent);
 
-                MainActivity.this.finish();
             }
         });
     }

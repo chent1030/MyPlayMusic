@@ -22,8 +22,7 @@ public class FindPasswordActivity extends AppCompatActivity {
         btn_close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(FindPasswordActivity.this,MainActivity.class);
-                startActivity(intent);
+
                FindPasswordActivity.this.finish();
             }
         });
@@ -31,9 +30,7 @@ public class FindPasswordActivity extends AppCompatActivity {
         btn_return.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(FindPasswordActivity.this,MainActivity.class);
 
-                startActivity(intent);
 
                 FindPasswordActivity.this.finish();
             }
