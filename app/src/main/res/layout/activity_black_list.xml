@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geminno.app.myplaymusic.me_activity.BlackListActivity">
+    <TextView
+        android:id="@+id/tv_blacklist_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="黑名单"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#555555"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_blacklist_1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:layout_marginTop="15dp"
+        android:background="@null"/>
+    <Button
+        android:id="@+id/btn_blacklist_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解除"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

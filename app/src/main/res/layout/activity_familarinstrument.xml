@@ -30,7 +30,7 @@
         android:layout_marginTop="15dp"
         android:background="@null"/>
 
-    <RadioGroup
+    <LinearLayout
         android:id="@+id/rg_familarinstrument"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="20dp"
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -49,8 +49,7 @@
             android:layout_height="35dp"
             android:text="吉他"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
-
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -60,7 +59,7 @@
             android:layout_height="35dp"
             android:text="贝斯"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -70,7 +69,7 @@
             android:layout_height="35dp"
             android:text="歌手"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -81,9 +80,9 @@
             android:text="键盘类"
             android:textColor="@drawable/textcolor"/>
 
-    </RadioGroup>
+    </LinearLayout>
 
-    <RadioGroup
+    <LinearLayout
         android:id="@+id/rg_familarinstrument_1"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="20dp"
@@ -92,7 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -102,7 +101,7 @@
             android:layout_height="35dp"
             android:text="架子鼓"
             android:textColor="@drawable/textcolor" />
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -112,7 +111,7 @@
             android:layout_height="35dp"
             android:text="提琴类"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -122,7 +121,7 @@
             android:layout_height="35dp"
             android:text="管乐类"
             android:textColor="@drawable/textcolor"/>
-        <RadioButton
+        <CheckBox
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -133,9 +132,9 @@
             android:text="民乐类"
             android:textColor="@drawable/textcolor"/>
 
-        </RadioGroup>
+        </LinearLayout>
 
-    <RadioGroup
+    <LinearLayout
         android:gravity="center"
         android:background="@drawable/login"
         android:id="@+id/rg_familarinstrument_2"
@@ -146,7 +145,7 @@
         android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-            <RadioButton
+            <CheckBox
                 android:button="@null"
                 android:layout_below="@id/rg_familarinstrument_1"
                 android:layout_alignLeft="@id/rg_familarinstrument_1"
@@ -154,7 +153,7 @@
                 android:layout_height="35dp"
                 android:text="其他"
                 android:textColor="@drawable/textcolor"/>
-</RadioGroup>
+</LinearLayout>
 
     <Button
         android:id="@+id/btn_familarinstrument_1"
