@@ -53,6 +53,7 @@
         <activity android:name=".me_activity.MessageRemindActivity" />
         <activity android:name=".me_activity.ChatBackgroundActivity" />
         <activity android:name=".me_activity.BlackListActivity"></activity>
+        <activity android:name=".person_activity.PersonActivity"/>
     </application>
 
 </manifest>
