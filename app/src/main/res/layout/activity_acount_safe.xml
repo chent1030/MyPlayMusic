@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:text="通过以下设置可提高安全等级"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/ll_safe_account"
         android:gravity="center_vertical"
         android:layout_marginLeft="20dp"
@@ -77,27 +77,29 @@
         android:background="@drawable/edittextmattern"
         android:layout_below="@id/tv_account_safe3"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal">
+        android:layout_height="40dp">
         <ImageView
+            android:id="@+id/iv_account_safe_1"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ac_open"/>
         <TextView
             android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_account_safe_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="玩乐账号"/>
         <TextView
-            android:layout_marginLeft="90dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GZHAJSHDJSAJDH"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:gravity="center_vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -107,12 +109,14 @@
         android:layout_height="40dp"
         android:orientation="horizontal">
         <ImageView
+            android:id="@+id/iv_account_safe_2"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ac_open"/>
         <TextView
             android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_account_safe_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="修改密码"/>
@@ -122,9 +126,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/tv_me_2"
             android:background="@null"
-            android:layout_marginLeft="200dp"/>
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </RelativeLayout>

@@ -115,7 +115,7 @@ public class MessageRemindActivity extends AppCompatActivity implements View.OnC
 
             case R.id.cb_messageremind_1:
                 if(flag==false) {
-                    oa = ObjectAnimator.ofFloat(iv_messageremind_1, "translationX", 0, 40);
+                    oa = ObjectAnimator.ofFloat(iv_messageremind_1, "translationX", 0, iv_messageremind_1.getWidth()/2+12);
                     Message msg = handler.obtainMessage();
                     msg.what = 1;
                     msg.obj = true;
@@ -128,7 +128,7 @@ public class MessageRemindActivity extends AppCompatActivity implements View.OnC
 
                 }
                 if(flag==true){
-                    oa = ObjectAnimator.ofFloat(iv_messageremind_1, "translationX", 40, 0);
+                    oa = ObjectAnimator.ofFloat(iv_messageremind_1, "translationX", iv_messageremind_1.getWidth()/2+12,0);
                     Message msg = handler.obtainMessage();
                     msg.what = 1;
                     msg.obj = false;
@@ -145,14 +145,14 @@ public class MessageRemindActivity extends AppCompatActivity implements View.OnC
 
             case R.id.cb_messageremind_2:
                 if(flag1==false) {
-                    oa1 = ObjectAnimator.ofFloat(iv_messageremind_2, "translationX", 0, 40);
+                    oa1 = ObjectAnimator.ofFloat(iv_messageremind_2, "translationX", 0, iv_messageremind_1.getWidth()/2+12);
                     Message msg = handler.obtainMessage();
                     msg.what = 2;
                     msg.obj = true;
                     handler.sendMessage(msg);
                 }
                 if(flag1==true){
-                    oa1 = ObjectAnimator.ofFloat(iv_messageremind_2, "translationX", 40, 0);
+                    oa1 = ObjectAnimator.ofFloat(iv_messageremind_2, "translationX", iv_messageremind_1.getWidth()/2+12, 0);
                     Message msg = handler.obtainMessage();
                     msg.what = 2;
                     msg.obj = false;
@@ -164,14 +164,14 @@ public class MessageRemindActivity extends AppCompatActivity implements View.OnC
                 break;
             case R.id.cb_messageremind_3:
                 if(flag2==false) {
-                    oa2 = ObjectAnimator.ofFloat(iv_messageremind_3, "translationX", 0, 40);
+                    oa2 = ObjectAnimator.ofFloat(iv_messageremind_3, "translationX", 0, iv_messageremind_1.getWidth()/2+12);
                     Message msg = handler.obtainMessage();
                     msg.what = 3;
                     msg.obj = true;
                     handler.sendMessage(msg);
                 }
                 if(flag2==true){
-                    oa2 = ObjectAnimator.ofFloat(iv_messageremind_3, "translationX", 40, 0);
+                    oa2 = ObjectAnimator.ofFloat(iv_messageremind_3, "translationX", iv_messageremind_1.getWidth()/2+12, 0);
                     Message msg = handler.obtainMessage();
                     msg.what = 3;
                     msg.obj = false;
@@ -183,14 +183,14 @@ public class MessageRemindActivity extends AppCompatActivity implements View.OnC
                 break;
             case R.id.cb_messageremind_4:
                 if(flag3==false) {
-                    oa3 = ObjectAnimator.ofFloat(iv_messageremind_4, "translationX", 0, 40);
+                    oa3 = ObjectAnimator.ofFloat(iv_messageremind_4, "translationX", 0, iv_messageremind_1.getWidth()/2+12);
                     Message msg = handler.obtainMessage();
                     msg.what = 4;
                     msg.obj = true;
                     handler.sendMessage(msg);
                 }
                 if(flag3==true){
-                    oa3 = ObjectAnimator.ofFloat(iv_messageremind_4, "translationX", 40, 0);
+                    oa3 = ObjectAnimator.ofFloat(iv_messageremind_4, "translationX", iv_messageremind_1.getWidth()/2+12, 0);
                     Message msg = handler.obtainMessage();
                     msg.what = 4;
                     msg.obj = false;
@@ -202,14 +202,14 @@ public class MessageRemindActivity extends AppCompatActivity implements View.OnC
                 break;
             case R.id.cb_messageremind_5:
                 if(flag4==false) {
-                    oa4 = ObjectAnimator.ofFloat(iv_messageremind_5, "translationX", 0, 40);
+                    oa4 = ObjectAnimator.ofFloat(iv_messageremind_5, "translationX", 0, iv_messageremind_1.getWidth()/2+12);
                     Message msg = handler.obtainMessage();
                     msg.what = 5;
                     msg.obj = true;
                     handler.sendMessage(msg);
                 }
                 if(flag4==true){
-                    oa4 = ObjectAnimator.ofFloat(iv_messageremind_5, "translationX", 40, 0);
+                    oa4 = ObjectAnimator.ofFloat(iv_messageremind_5, "translationX", iv_messageremind_1.getWidth()/2+12, 0);
                     Message msg = handler.obtainMessage();
                     msg.what = 5;
                     msg.obj = false;
