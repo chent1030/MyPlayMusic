@@ -21,7 +21,7 @@ import com.geminno.app.myplaymusic.fragment.Fragment5;
 public class Me_infoActivity extends AppCompatActivity implements View.OnClickListener{
 
     Intent intent;
-    private ImageButton ib_returnme;
+    private TextView ib_returnme;
     private ImageButton ib_name;
     private RelativeLayout rl_personinfo;
     private ImageButton ib_meinfo_1;
@@ -41,7 +41,7 @@ public class Me_infoActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_me_info);
         ib_idiograph = ((ImageButton) findViewById(R.id.ib_idiograph));
-        ib_returnme = ((ImageButton) findViewById(R.id.ib_returnme));
+        ib_returnme = ((TextView) findViewById(R.id.ib_returnme));
         ib_meinfo_1 = ((ImageButton) findViewById(R.id.ib_meinfo_1));
         rl_personinfo = ((RelativeLayout) findViewById(R.id.rl_personinfo));
         ib_name=((ImageButton) findViewById(R.id.ib_name));

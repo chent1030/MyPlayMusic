@@ -15,21 +15,15 @@
         android:gravity="center"
         android:background="#555555"/>
     <TextView
+        android:id="@+id/ib_sex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="返回"
+        android:drawableLeft="@drawable/arrow"
         android:textSize="20sp"
         android:textColor="#ffffff"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="30dp"/>
-
-    <ImageButton
-        android:id="@+id/ib_sex"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:src="@drawable/arrow"
-        android:layout_marginTop="15dp"
-        android:background="@null"/>
+        android:layout_marginLeft="15dp"/>
 
     <Button
         android:layout_width="wrap_content"

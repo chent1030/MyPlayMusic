@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import com.geminno.app.myplaymusic.R;
 import com.geminno.app.myplaymusic.pojo.Circle;
@@ -22,14 +23,14 @@ import java.util.Map;
 public class MyMusicCircleActivity extends AppCompatActivity {
 
     private PullToRefreshListView ptrlv_dynamic;
-    private ImageButton ib_return_dynamic;
+    private TextView ib_return_dynamic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_music_circle);
         ptrlv_dynamic = ((PullToRefreshListView) findViewById(R.id.ptrlv_dynamic));
-        ib_return_dynamic = ((ImageButton) findViewById(R.id.ib_return_dynamic));
+        ib_return_dynamic = ((TextView) findViewById(R.id.ib_return_dynamic));
         initdata();
     }
 

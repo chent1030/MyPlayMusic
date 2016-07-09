@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.geminno.app.myplaymusic.R;
 
 public class ProductConnectionActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton ib_product_conn;
+    private TextView ib_product_conn;
     private ImageButton ib_production_delete;
     private EditText et_product_conn;
 
@@ -19,7 +20,7 @@ public class ProductConnectionActivity extends AppCompatActivity implements View
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_connection);
 
-        ib_product_conn = ((ImageButton) findViewById(R.id.ib_product_conn));
+        ib_product_conn = ((TextView) findViewById(R.id.ib_product_conn));
         ib_production_delete = ((ImageButton) findViewById(R.id.ib_production_delete));
         et_product_conn= ((EditText) findViewById(R.id.et_product_conn));
         ib_product_conn.setOnClickListener(this);

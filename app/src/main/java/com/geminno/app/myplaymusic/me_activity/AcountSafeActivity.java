@@ -18,7 +18,7 @@ import com.geminno.app.myplaymusic.R;
 
 public class AcountSafeActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton ib_account_safe_1;
+    private TextView ib_account_safe_1;
     private ImageButton ib_account_safe_2;
     private RelativeLayout rl_view;
     private TextView tv_verifypassword;
@@ -32,7 +32,7 @@ public class AcountSafeActivity extends AppCompatActivity implements View.OnClic
 
         rl_view = ((RelativeLayout) findViewById(R.id.rl_view));
 
-        ib_account_safe_1 = ((ImageButton) findViewById(R.id.ib_account_safe_1));
+        ib_account_safe_1 = ((TextView) findViewById(R.id.ib_account_safe_1));
         ib_account_safe_2 = ((ImageButton) findViewById(R.id.ib_account_safe_2));
         ib_account_safe_1.setOnClickListener(this);
         ib_account_safe_2.setOnClickListener(this);

@@ -19,7 +19,7 @@ import org.w3c.dom.Text;
 
 public class SettingActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton ib_setting_1;
+    private TextView ib_setting_1;
     private ImageButton ib_setting_6;
     private ImageButton ib_setting_2;
     private ImageButton ib_setting_3;
@@ -32,7 +32,7 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
-        ib_setting_1 = ((ImageButton) findViewById(R.id.ib_setting_1));
+        ib_setting_1 = ((TextView) findViewById(R.id.ib_setting_1));
         ib_setting_2 = ((ImageButton) findViewById(R.id.ib_setting_2));
         ib_setting_3= ((ImageButton) findViewById(R.id.ib_setting_3));
         ib_setting_4= ((ImageButton) findViewById(R.id.ib_setting_4));

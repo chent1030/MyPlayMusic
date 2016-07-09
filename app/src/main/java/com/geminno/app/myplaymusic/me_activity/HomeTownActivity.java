@@ -11,7 +11,7 @@ import com.geminno.app.myplaymusic.R;
 
 public class HomeTownActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton ib_hometown_1;
+    private TextView ib_hometown_1;
     private ImageButton ib_hometown_2;
     private EditText et_hometown_1;
 
@@ -20,7 +20,7 @@ public class HomeTownActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_town);
 
-        ib_hometown_1 = ((ImageButton) findViewById(R.id.ib_hometown_1));
+        ib_hometown_1 = ((TextView) findViewById(R.id.ib_hometown_1));
         ib_hometown_2=((ImageButton) findViewById(R.id.ib_hometown_2));
         et_hometown_1=((EditText) findViewById(R.id.et_hometown_1));
 

@@ -18,7 +18,7 @@ import com.geminno.app.myplaymusic.R;
 
 public class MessageRemindActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton ib_messageremind_1;
+    private TextView ib_messageremind_1;
     private ImageView iv_messageremind_1;
     private CheckBox cb_messageremind_1;
     private ImageView iv_messageremind_2;
@@ -78,7 +78,7 @@ public class MessageRemindActivity extends AppCompatActivity implements View.OnC
         rl_messageremind = ((RelativeLayout) findViewById(R.id.rl_messageremind));
         rl_messageremind_1 = ((RelativeLayout) findViewById(R.id.rl_remindmessage_1));
         rl_messageremind_2 = ((RelativeLayout) findViewById(R.id.rl_messageremind_2));
-        ib_messageremind_1 = ((ImageButton) findViewById(R.id.ib_messageremind_1));
+        ib_messageremind_1 = ((TextView) findViewById(R.id.ib_messageremind_1));
         iv_messageremind_1 = ((ImageView) findViewById(R.id.iv_messageremind_1));
         cb_messageremind_1 = ((CheckBox) findViewById(R.id.cb_messageremind_1));
         iv_messageremind_2 = ((ImageView) findViewById(R.id.iv_messageremind_2));

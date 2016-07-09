@@ -19,7 +19,7 @@ import java.util.List;
 
 public class DynamicDetailsActivity_personcircle extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton ib_return_dynamicdetail;
+    private TextView ib_return_dynamicdetail;
     private ListView lv_dynamicdetail;
 
     @Override
@@ -28,7 +28,7 @@ public class DynamicDetailsActivity_personcircle extends AppCompatActivity imple
         setContentView(R.layout.activity_dynamic_details);
 
         lv_dynamicdetail = ((ListView) findViewById(R.id.lv_dynamicdetail));
-        ib_return_dynamicdetail = ((ImageButton) findViewById(R.id.ib_return_dynamicdetail));
+        ib_return_dynamicdetail = ((TextView) findViewById(R.id.ib_return_dynamicdetail));
         ib_return_dynamicdetail.setOnClickListener(this);
 
         initData();

@@ -14,20 +14,15 @@
         android:gravity="center"
         android:background="#555555"/>
     <TextView
+        android:id="@+id/ib_screen_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="取消"
+        android:drawableLeft="@drawable/arrow"
         android:textSize="20sp"
         android:textColor="#ffffff"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="30dp"/>
-    <ImageButton
-        android:id="@+id/ib_screen_back"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:src="@drawable/arrow"
-        android:layout_marginTop="15dp"
-        android:background="@null"/>
+        android:layout_marginLeft="15dp"/>
     <TextView
         android:id="@+id/tv_screen_confirm"
         android:layout_width="wrap_content"
@@ -36,6 +31,7 @@
         android:textColor="#ffffff"
         android:layout_marginTop="15dp"
         android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
         android:text="确定"/>
     <TextView
         android:id="@+id/tv_screen_text1"

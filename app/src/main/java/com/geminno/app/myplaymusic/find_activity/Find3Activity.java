@@ -11,7 +11,7 @@ import com.geminno.app.myplaymusic.R;
 
 
 public class Find3Activity extends AppCompatActivity {
-    ImageView iv_back;
+
     private ImageView iv_prac_right;
     private TextView tv_back;
 
@@ -19,15 +19,7 @@ public class Find3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find3);
-        iv_back = ((ImageView) findViewById(R.id.iv_back));
         tv_back = ((TextView) findViewById(R.id.tv_back));
-
-        iv_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Find3Activity.this.finish();
-            }
-        });
         tv_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

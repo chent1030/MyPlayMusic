@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.geminno.app.myplaymusic.R;
@@ -18,14 +19,14 @@ import java.util.Calendar;
 
 public class AgeActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton ib_age;
+    private TextView ib_age;
     private DatePicker datetimepicker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_age);
-        ib_age = ((ImageButton) findViewById(R.id.ib_age));
+        ib_age = ((TextView) findViewById(R.id.ib_age));
         ib_age.setOnClickListener(this);
 
         Calendar calendar=Calendar.getInstance();

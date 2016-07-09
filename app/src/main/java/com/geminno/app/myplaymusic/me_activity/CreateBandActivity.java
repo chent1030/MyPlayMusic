@@ -5,19 +5,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.geminno.app.myplaymusic.R;
 
 public class CreateBandActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton ib_createBand_return;
+    private TextView ib_createBand_return;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_band);
 
-        ib_createBand_return = ((ImageButton) findViewById(R.id.ib_createBand_return));
+        ib_createBand_return = ((TextView) findViewById(R.id.ib_createBand_return));
 
         ib_createBand_return.setOnClickListener(this);
     }
