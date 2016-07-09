@@ -36,10 +36,10 @@ public class NearActivity extends AppCompatActivity {
                     case R.id.rb_message:
                         fragment=new Fragment2();
                         break;
-                    case R.id.rb_friendcircle:
+                    case R.id.rb_find:
                         fragment=new Fragment3();
                         break;
-                    case R.id.rb_find:
+                    case R.id.rb_friendcircle:
                         fragment=new Fragment4();
                         break;
                     case R.id.rb_me:
