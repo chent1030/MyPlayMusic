@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.geminno.app.myplaymusic.R;
@@ -17,18 +18,28 @@ public class Find2_2Activity extends AppCompatActivity {
 
     private ImageView iv_prac_right;
     private Button btn_baoming;
+    private TextView tv_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find2_2);
         iv_back = ((ImageView) findViewById(R.id.iv_back));
+        tv_back = ((TextView) findViewById(R.id.tv_back));
+
         iv_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Find2_2Activity.this.finish();
             }
         });
+        tv_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Find2_2Activity.this.finish();
+            }
+        });
+
         btn_baoming = ((Button) findViewById(R.id.btn_baoming));
         btn_baoming.setOnClickListener(new View.OnClickListener() {
             @Override
