@@ -19,10 +19,19 @@ android {
     }
 }
 
+
+repositories{
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile project(':library_pulltorefresh11')
     compile files('libs/RxAndroid.jar')
+    compile name:'SMSSDK-2.1.0',ext:'aar'
+    compile name:'SMSSDKGUI-2.1.0',ext:'aar'
 }

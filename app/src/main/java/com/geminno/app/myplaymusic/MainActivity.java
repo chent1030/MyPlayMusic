@@ -1,16 +1,23 @@
 package com.geminno.app.myplaymusic;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements TextWatcher,View.OnClickListener{
 
     private Button btn_forget;
     private Button bt2;
     private Button bt_login;
+    private EditText et_phone;
+    private EditText et_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +25,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn_forget = ((Button) findViewById(R.id.btn_forget));
+        et_phone = ((EditText) findViewById(R.id.et_phone));
+        et_password = ((EditText) findViewById(R.id.et_password));
         bt2 = ((Button) findViewById(R.id.bt2));
         bt_login = ((Button) findViewById(R.id.bt_login));
+
+        et_phone.addTextChangedListener(this);
+        et_password.addTextChangedListener(this);
 
         btn_forget.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,14 +55,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        bt_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,NearActivity.class);
-                startActivity(intent);
+        bt_login.setOnClickListener(this);
 
-            }
-        });
     }
 
     @Override
@@ -58,5 +64,36 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
 
         System.out.println("关闭");
+    }
+
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+        if(!TextUtils.isEmpty(et_phone.getText().toString())&&!TextUtils.isEmpty(et_password.getText().toString())){
+            bt_login.setBackgroundColor(Color.parseColor("#FF6091"));
+            bt_login.setEnabled(true);
+        }else{
+            bt_login.setEnabled(false);
+            bt_login.setBackgroundColor(Color.parseColor("#cccccc"));
+        }
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.bt_login:
+                startActivity(new Intent(this,NearActivity.class));
+                break;
+        }
     }
 }

@@ -1,4 +1,5 @@
 package com.geminno.app.myplaymusic.fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import com.geminno.app.myplaymusic.Comm.CommFragment;
 import com.geminno.app.myplaymusic.R;
@@ -17,6 +19,8 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Wenwen on 2016/6/28.
@@ -45,6 +49,7 @@ public class Fragment4_1 extends CommFragment {
 
         lv_friend_circle_1.setAdapter(new BaseAdapter() {
 
+
             @Override
             public int getCount() {
                 return circleList.size();
@@ -63,8 +68,8 @@ public class Fragment4_1 extends CommFragment {
             @Override
             public View getView(final int position, View convertView, ViewGroup parent) {
                 View view= View.inflate(getActivity(),R.layout.list_item1,null);
-                ImageButton ib_commet_1 = ((ImageButton) view.findViewById(R.id.ib_commet_1));
 
+                ImageButton ib_commet_1 = ((ImageButton) view.findViewById(R.id.ib_commet_1));
                 ImageView iv_headpic_1=((ImageView) view.findViewById(R.id.iv_headpic_1));
                 TextView tv_list_item1_1=((TextView) view.findViewById(R.id.tv_list_item1_1));
                 TextView tv_list_item2_1=((TextView) view.findViewById(R.id.tv_list_item2_1));
