@@ -1,6 +1,8 @@
 package com.geminno.app.myplaymusic.fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +30,7 @@ import java.util.Map;
 public class Fragment4_1 extends CommFragment {
 
     private PullToRefreshListView lv_friend_circle_1;
+    boolean flag;
 
     @Override
     public View initview(LayoutInflater inflater) {
@@ -50,6 +53,8 @@ public class Fragment4_1 extends CommFragment {
         lv_friend_circle_1.setAdapter(new BaseAdapter() {
 
 
+            private ImageButton ib_like_1;
+
             @Override
             public int getCount() {
                 return circleList.size();
@@ -68,6 +73,22 @@ public class Fragment4_1 extends CommFragment {
             @Override
             public View getView(final int position, View convertView, ViewGroup parent) {
                 View view= View.inflate(getActivity(),R.layout.list_item1,null);
+                ib_like_1 = ((ImageButton) view.findViewById(R.id.ib_like_1));
+
+                flag=false;
+                final Handler handler=new Handler(){
+                    @Override
+                    public void handleMessage(Message msg) {
+                        switch (msg.what) {
+                            case 1:
+                                flag=(boolean)msg.obj;
+                                break;
+                            case 0:
+                                flag=(boolean)msg.obj;
+                                break;
+                        }
+                    }
+                };
 
                 ImageButton ib_commet_1 = ((ImageButton) view.findViewById(R.id.ib_commet_1));
                 ImageView iv_headpic_1=((ImageView) view.findViewById(R.id.iv_headpic_1));
@@ -76,7 +97,7 @@ public class Fragment4_1 extends CommFragment {
                 ImageView iv_body_1=((ImageView) view.findViewById(R.id.iv_body_1));
                 TextView tv_list_item3_1=((TextView) view.findViewById(R.id.tv_list_item3_1));
                 TextView tv_list_item5_1=((TextView) view.findViewById(R.id.tv_list_item5_1));
-                TextView tv_list_item6_1=((TextView) view.findViewById(R.id.tv_list_item6_1));
+               final TextView tv_list_item6_1=((TextView) view.findViewById(R.id.tv_list_item6_1));
                 TextView tv_list_item7_1=((TextView) view.findViewById(R.id.tv_list_item7_1));
 
                 iv_headpic_1.setImageResource(circleList.get(position).getHeadPic());
@@ -85,8 +106,28 @@ public class Fragment4_1 extends CommFragment {
                 iv_body_1.setImageResource(circleList.get(position).getPicShare());
                 tv_list_item3_1.setText(circleList.get(position).getDistance()+"");
                 tv_list_item5_1.setText(DateUtils.DateToString(circleList.get(position).getDate()));
-                tv_list_item6_1.setText(circleList.get(position).getLikeCount()+"");
+                 tv_list_item6_1.setText(circleList.get(position).getLikeCount()+"");
                 tv_list_item7_1.setText(circleList.get(position).getCommentCount()+"");
+
+                ib_like_1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        if(flag==false) {
+                            tv_list_item6_1.setText((Integer.parseInt(tv_list_item6_1.getText().toString()) + 1)+"");
+                            Message msg=handler.obtainMessage();
+                            msg.what=1;
+                            msg.obj=true;
+                            handler.sendMessage(msg);
+                        }else{
+                            tv_list_item6_1.setText((Integer.parseInt(tv_list_item6_1.getText().toString()) - 1)+"");
+                            Message msg=handler.obtainMessage();
+                            msg.what=0;
+                            msg.obj=false;
+                            handler.sendMessage(msg);
+                        }
+                    }
+                });
 
                 ib_commet_1.setOnClickListener(new View.OnClickListener() {
                     @Override

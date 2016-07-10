@@ -45,12 +45,11 @@
                 <ImageButton
                     android:id="@+id/ib_help_1"
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tv_me_2"
                     android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_alignParentRight="true" />
 
                 <View
                     android:layout_width="match_parent"
@@ -70,12 +69,11 @@
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tv_me_2"
                     android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_alignParentRight="true" />
 
                 <View
                     android:layout_width="match_parent"
@@ -95,12 +93,11 @@
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tv_me_2"
                     android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_alignParentRight="true" />
 
                 <View
                     android:layout_width="match_parent"
@@ -120,12 +117,11 @@
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tv_me_2"
                     android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_alignParentRight="true" />
 
                 <View
                     android:layout_width="match_parent"
@@ -145,12 +141,11 @@
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tv_me_2"
                     android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_alignParentRight="true" />
 
                 <View
                     android:layout_width="match_parent"
@@ -170,12 +165,11 @@
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tv_me_2"
                     android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_alignParentRight="true" />
 
                 <View
                     android:layout_width="match_parent"
@@ -195,12 +189,11 @@
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tv_me_2"
                     android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_alignParentRight="true" />
 
                 <View
                     android:layout_width="match_parent"
@@ -220,12 +213,11 @@
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/tv_me_2"
                     android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_alignParentRight="true" />
 
                 <View
                     android:layout_width="match_parent"

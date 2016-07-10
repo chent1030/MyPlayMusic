@@ -53,13 +53,12 @@
 
             <ImageButton
                 android:id="@+id/ib_me_1"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                  android:src="@drawable/tv_me_1"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:background="@null"
-                android:layout_marginRight="20dp"/>
+                android:background="@null" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -91,8 +90,7 @@
             <ImageButton
                 android:id="@+id/ib_me_2"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null"/>
@@ -128,8 +126,7 @@
             <ImageButton
                 android:id="@+id/ib_me_3"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null"/>
@@ -165,8 +162,7 @@
             <ImageButton
                 android:id="@+id/ib_me_4"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null"/>
@@ -201,8 +197,7 @@
             <ImageButton
                 android:id="@+id/ib_me_5"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null"/>

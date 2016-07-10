@@ -61,13 +61,14 @@
         <activity android:name=".me_activity.SettingPasswordActivity" />
         <activity android:name=".me_activity.MessageRemindActivity" />
         <activity android:name=".me_activity.ChatBackgroundActivity" />
-        <activity android:name=".me_activity.BlackListActivity"></activity>
-        <activity android:name=".person_activity.PersonActivity"/>
+        <activity android:name=".me_activity.BlackListActivity" />
+        <activity android:name=".person_activity.PersonActivity" />
         <activity
             android:name="com.mob.tools.MobUIShell"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".circle_activity.ShareCircleActivity"></activity>
     </application>
 
 </manifest>

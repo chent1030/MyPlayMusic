@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements TextWatcher,View.
         switch (v.getId()) {
             case R.id.bt_login:
                 startActivity(new Intent(this,NearActivity.class));
+                this.finish();
                 break;
         }
     }

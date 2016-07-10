@@ -17,14 +17,14 @@ import com.geminno.app.myplaymusic.person_activity.PersonActivity;
  */
 public class Fragment1 extends CommFragment {
     View view;
-    private ImageButton ib_near_search;
+
     private ImageButton ib_screen;
     private RadioGroup rg_near;
 
     @Override
     public View initview(LayoutInflater inflater) {
         view = inflater.inflate(R.layout.near,null);
-        ib_near_search = ((ImageButton) view.findViewById(R.id.ib_near_search));
+
         ib_screen = ((ImageButton) view.findViewById(R.id.ib_screen));
         rg_near = ((RadioGroup) view.findViewById(R.id.rg_near));
         return view;

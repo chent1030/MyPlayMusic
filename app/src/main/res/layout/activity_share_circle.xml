@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_view_1"
+    tools:context="com.geminno.app.myplaymusic.circle_activity.ShareCircleActivity">
+    <TextView
+        android:id="@+id/tv_sharecircle"
+        style="@style/actiontitle"/>
+
+    <Button
+        android:id="@+id/btn_sharecircle"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/arrow"
+        android:paddingTop="15dp"
+        android:background="@null" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@id/tv_sharecircle"
+        android:text="发送"
+        android:textColor="#ffffff"
+        android:background="#FF6091"/>
+
+    <EditText
+        android:layout_marginLeft="15dp"
+        android:id="@+id/et_sharecircle"
+        android:background="@drawable/et_pattern"
+        android:gravity="top"
+        android:layout_below="@id/tv_sharecircle"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="这一刻的想法..."/>
+
+    <ImageView
+        android:id="@+id/iv_sharecircle"
+        android:layout_alignLeft="@id/et_sharecircle"
+        android:layout_below="@id/et_sharecircle"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_sharecircle"
+        android:layout_alignLeft="@id/et_sharecircle"
+        android:layout_below="@id/et_sharecircle"
+        android:background="@null"
+        android:src="@drawable/addicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

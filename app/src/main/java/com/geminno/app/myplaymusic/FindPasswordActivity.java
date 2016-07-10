@@ -127,7 +127,6 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
 
                 String et_ver=et_verifycode_forgetpassword.getText().toString();
                 SMSSDK.submitVerificationCode("86",phone_new,et_ver);
-
                 if(!MyUtils.isPassword(et_newpassword.getText().toString())){
                     new AlertDialog.Builder(this).setTitle("提示")
                             .setMessage("新密码必须同时包含数字和字母,长度6至12位")
@@ -175,11 +174,11 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
                 &&!TextUtils.isEmpty(et_newpassword.getText().toString())
                 &&!TextUtils.isEmpty(et_ms_newpassword.getText().toString())){
 
-            btn_save.setClickable(true);
+            btn_save.setEnabled(true);
             btn_save.setBackgroundColor(Color.parseColor("#FF6091"));
 
         }else{
-            btn_save.setClickable(false);
+            btn_save.setEnabled(false);
             btn_save.setBackgroundColor(Color.parseColor("#cccccc"));
         }
 

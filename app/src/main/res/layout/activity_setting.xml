@@ -43,10 +43,9 @@
                 android:background="#ffffff"/>
             <ImageButton
                 android:id="@+id/ib_setting_2"
-                android:layout_marginRight="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null" />
@@ -71,10 +70,9 @@
                 android:background="#ffffff"/>
             <ImageButton
                 android:id="@+id/ib_setting_3"
-                android:layout_marginRight="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null" />
@@ -100,10 +98,9 @@
                 android:background="#ffffff"/>
             <ImageButton
                 android:id="@+id/ib_setting_4"
-                android:layout_marginRight="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null" />
@@ -129,10 +126,9 @@
                 android:background="#ffffff"/>
             <ImageButton
                 android:id="@+id/ib_setting_5"
-                android:layout_marginRight="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null" />
@@ -158,10 +154,9 @@
                 android:background="#ffffff"/>
             <ImageButton
                 android:id="@+id/ib_setting_6"
-                android:layout_marginRight="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/tv_me_2"
                 android:background="@null" />
