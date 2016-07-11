@@ -33,19 +33,7 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
     private EditText et_newpassword;
     private EditText et_ms_newpassword;
     String phone_new;
-    private Handler hanlder=new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-           int result=msg.arg1;
-            int event=msg.arg2;
-            Object data=msg.obj;
-            if(result==SMSSDK.RESULT_COMPLETE){
-                if(event==SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE){
-                    Toast.makeText(FindPasswordActivity.this,"验证成功",Toast.LENGTH_LONG).show();
-                }
-            }
-        }
-    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +82,7 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
 
         SMSSDK.initSDK(this,"14b9581e3a77e","53aa664f91de74bf8af04dcfe2f71ec6");
 
+        final Handler hanlder=new Handler();
         EventHandler eh=new EventHandler(){
             @Override
             public void afterEvent(int result, int event, Object data) {
@@ -125,8 +114,9 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
                 break;
             case R.id.btn_save:
 
-                String et_ver=et_verifycode_forgetpassword.getText().toString();
-                SMSSDK.submitVerificationCode("86",phone_new,et_ver);
+//                String et_ver=et_verifycode_forgetpassword.getText().toString();
+//                SMSSDK.submitVerificationCode("86",phone_new,et_ver);
+
                 if(!MyUtils.isPassword(et_newpassword.getText().toString())){
                     new AlertDialog.Builder(this).setTitle("提示")
                             .setMessage("新密码必须同时包含数字和字母,长度6至12位")
@@ -181,6 +171,5 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
             btn_save.setEnabled(false);
             btn_save.setBackgroundColor(Color.parseColor("#cccccc"));
         }
-
     }
 }

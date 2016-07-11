@@ -8,7 +8,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
+import android.os.Environment;
 import android.provider.MediaStore;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -24,8 +26,15 @@ import android.widget.TextView;
 
 import com.geminno.app.myplaymusic.R;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class ShareCircleActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private static final int CROP_PHOTO = 2;
     private Button btn_sharecircle;
     private ImageButton ib_sharecircle;
     PopupWindow popupWindow;
@@ -35,6 +44,8 @@ public class ShareCircleActivity extends AppCompatActivity implements View.OnCli
     private TextView cancel_photo;
     private RelativeLayout rl_view_1;
     private ImageView iv_sharecircle;
+    private String fileName;
+    private Uri imageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,8 +75,24 @@ public class ShareCircleActivity extends AppCompatActivity implements View.OnCli
                 tv_takephoto.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        //    Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                        //startActivityForResult(camera, RESULT_LOAD_IMAGE);
+//                        SimpleDateFormat format=new SimpleDateFormat("yyyyMMddHHmmss");
+//                        Date date=new Date(System.currentTimeMillis());
+//                        fileName=format.format(date);
+//                        File path= Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
+//                        File outputImage=new File(path,fileName+".jpg");
+//                        if(outputImage.exists()){
+//                            outputImage.delete();
+//                        }
+//                        try {
+//                            outputImage.createNewFile();
+//                        } catch (IOException e) {
+//                            e.printStackTrace();
+//                        }
+//                        //将file对象转换成Uri并启动照相程序
+//                        imageUri=Uri.fromFile(outputImage);
+//                        Intent camera = new Intent("android.media.action.IMAGE_CAPTURE");
+//                        camera.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);//指定图片输出位置
+//                        startActivityForResult(camera, RESULT_LOAD_IMAGE+1);
                         Intent intent=new Intent();
                         intent.setAction("android.media.action.STILL_IMAGE_CAMERA");
                         startActivity(intent);
@@ -103,48 +130,35 @@ public class ShareCircleActivity extends AppCompatActivity implements View.OnCli
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (data == null) {
-            return;
-        }
         switch (requestCode) {
-//            case RESULT_LOAD_IMAGE:
-//                switch (resultCode) {
-//                    case Activity.RESULT_OK://照相完成点击确定
-//                        String sdStatus = Environment.getExternalStorageState();
-//                        if (!sdStatus.equals(Environment.MEDIA_MOUNTED)) {//检测sd是否可用
-//                            Log.v("TestFile", "SD card is not avaiable/writeable right now");
-//                            return;
-//                        }
-//                        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_hhmmss");
-//                        String name = sdf.format(Calendar.getInstance().getTime()) + ".jpg";
-//                        System.out.println(name);
-//
-//                        Bundle bundle = data.getExtras();
-//                        Bitmap bitmap = (Bitmap) bundle.get("data");
-//
-//                        File file = new File("/sdcard/picak/");
-//                        file.mkdirs();
-//
-//                        String fileName = file.getPath() + name;
-//
-//                        FileOutputStream fos = null;
-//
-//                        try {
-//                            fos = new FileOutputStream(fileName);
-//                            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
-//                        } catch (FileNotFoundException e) {
-//                            e.printStackTrace();
-//                        } finally {
-//                            try {
-//                                fos.flush();
-//                                fos.close();
-//                            } catch (IOException e) {
-//                                e.printStackTrace();
-//                            }
-//                        }
+//            case RESULT_LOAD_IMAGE+1:
+//                if(resultCode==RESULT_OK){
+//                   Intent intent=new Intent("com.android.camera.action.CROP");//剪裁
+//                    intent.setDataAndType(imageUri,"image/*");
+//                    intent.putExtra("scale",true);
+//                    //设置宽高比例
+//                    intent.putExtra("aspectX",1);
+//                    intent.putExtra("aspectY",1);
+//                    //设置裁剪图片宽高
+//                    intent.putExtra("outputX",340);
+//                    intent.putExtra("outputY",340);
+//                    intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);
+//                    //广播刷新相册
+//                    Intent intentBc=new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+//                    intentBc.setData(imageUri);
+//                    this.sendBroadcast(intentBc);
+//                    startActivityForResult(intent,CROP_PHOTO);
+//                    break;
 //                }
+//            case CROP_PHOTO:
 //
-//
+//                    try {
+//                        Bitmap bm = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));
+//                        iv_sharecircle.setImageBitmap(bm);
+//                    } catch (FileNotFoundException e) {
+//                        e.printStackTrace();
+//                    }
+//                break;
             case RESULT_LOAD_IMAGE :
                 if (resultCode == Activity.RESULT_OK) {
                     Uri selectedImage = data.getData();

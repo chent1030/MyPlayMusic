@@ -45,19 +45,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private TimeCount time;
     String str_phone,str_str_phone;
     boolean flag=false;
-    Handler handler=new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-            int result=msg.arg1;
-            int event=msg.arg2;
-            Object data=msg.obj;
-            if(result== cn.smssdk.SMSSDK.RESULT_COMPLETE){
-                if(event== cn.smssdk.SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE){
-                    Toast.makeText(RegisterActivity.this,"验证成功",Toast.LENGTH_LONG).show();
-                }
-            }
-        }
-    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,6 +75,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         btn_policy.setOnClickListener(this);
         btn_register.setOnClickListener(this);
 
+        final Handler handler=new Handler();
         EventHandler eventHandler=new EventHandler(){
             @Override
             public void afterEvent(int event, int result, Object data) {
@@ -160,8 +149,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 }
                 break;
             case R.id.btn_register:
-                String str_et2=et2.getText().toString();
-                cn.smssdk.SMSSDK.submitVerificationCode("86",str_str_phone,str_et2);
+//                String str_et2=et2.getText().toString();
+//                cn.smssdk.SMSSDK.submitVerificationCode("86",str_str_phone,str_et2);
 
                 String et3_3=et3.getText().toString();
                 String et4_4=et4.getText().toString();
