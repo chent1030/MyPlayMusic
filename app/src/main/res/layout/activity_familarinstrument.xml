@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <CheckBox
+            android:id="@+id/cb_fs1"
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -44,6 +45,7 @@
             android:text="吉他"
             android:textColor="@drawable/textcolor"/>
         <CheckBox
+            android:id="@+id/cb_fs2"
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -54,6 +56,7 @@
             android:text="贝斯"
             android:textColor="@drawable/textcolor"/>
         <CheckBox
+            android:id="@+id/cb_fs3"
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -64,6 +67,7 @@
             android:text="歌手"
             android:textColor="@drawable/textcolor"/>
         <CheckBox
+            android:id="@+id/cb_fs4"
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -86,6 +90,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <CheckBox
+            android:id="@+id/cb_fs5"
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -96,6 +101,7 @@
             android:text="架子鼓"
             android:textColor="@drawable/textcolor" />
         <CheckBox
+            android:id="@+id/cb_fs6"
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -106,6 +112,7 @@
             android:text="提琴类"
             android:textColor="@drawable/textcolor"/>
         <CheckBox
+            android:id="@+id/cb_fs7"
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -116,6 +123,7 @@
             android:text="管乐类"
             android:textColor="@drawable/textcolor"/>
         <CheckBox
+            android:id="@+id/cb_fs8"
             android:gravity="center"
             android:background="@drawable/login"
             android:layout_marginRight="10dp"
@@ -140,6 +148,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
             <CheckBox
+                android:id="@+id/cb_fs9"
                 android:button="@null"
                 android:layout_below="@id/rg_familarinstrument_1"
                 android:layout_alignLeft="@id/rg_familarinstrument_1"

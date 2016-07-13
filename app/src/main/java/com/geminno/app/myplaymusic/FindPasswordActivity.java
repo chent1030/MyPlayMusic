@@ -40,7 +40,7 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_password);
 
-        initSDK();
+//        initSDK();
 
         btn_close = ((Button) findViewById(R.id.btn_close));
         btn_return = ((Button) findViewById(R.id.btn_return));
@@ -78,24 +78,24 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
         });
     }
 
-    private void initSDK() {
-
-        SMSSDK.initSDK(this,"14b9581e3a77e","53aa664f91de74bf8af04dcfe2f71ec6");
-
-        final Handler hanlder=new Handler();
-        EventHandler eh=new EventHandler(){
-            @Override
-            public void afterEvent(int result, int event, Object data) {
-                Message msg=hanlder.obtainMessage();
-                msg.arg1=result;
-                msg.arg2=event;
-                msg.obj=data;
-                hanlder.sendMessage(msg);
-
-            }
-        };
-        SMSSDK.registerEventHandler(eh);
-    }
+//    private void initSDK() {
+//
+//        SMSSDK.initSDK(this,"14b9581e3a77e","53aa664f91de74bf8af04dcfe2f71ec6");
+//
+//        final Handler hanlder=new Handler();
+//        EventHandler eh=new EventHandler(){
+//            @Override
+//            public void afterEvent(int result, int event, Object data) {
+//                Message msg=hanlder.obtainMessage();
+//                msg.arg1=result;
+//                msg.arg2=event;
+//                msg.obj=data;
+//                hanlder.sendMessage(msg);
+//
+//            }
+//        };
+//        SMSSDK.registerEventHandler(eh);
+//    }
 
     @Override
     public void onClick(View v) {
@@ -107,7 +107,7 @@ public class FindPasswordActivity extends AppCompatActivity implements TextWatch
                     Toast.makeText(this,"请输入正确的手机号格式",Toast.LENGTH_LONG).show();
                 }else{
                     TimeCount time=new TimeCount(60000,1000,btn_verifycode_forgetpassword);
-                    SMSSDK.getVerificationCode("86",et_phone_forgetpassword.getText().toString());
+//                    SMSSDK.getVerificationCode("86",et_phone_forgetpassword.getText().toString());
                     phone_new=et_phone_forgetpassword.getText().toString();
                     time.start();
                 }

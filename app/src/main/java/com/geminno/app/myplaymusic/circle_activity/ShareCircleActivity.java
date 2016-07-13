@@ -28,6 +28,7 @@ import com.geminno.app.myplaymusic.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -75,27 +76,11 @@ public class ShareCircleActivity extends AppCompatActivity implements View.OnCli
                 tv_takephoto.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-//                        SimpleDateFormat format=new SimpleDateFormat("yyyyMMddHHmmss");
-//                        Date date=new Date(System.currentTimeMillis());
-//                        fileName=format.format(date);
-//                        File path= Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
-//                        File outputImage=new File(path,fileName+".jpg");
-//                        if(outputImage.exists()){
-//                            outputImage.delete();
-//                        }
-//                        try {
-//                            outputImage.createNewFile();
-//                        } catch (IOException e) {
-//                            e.printStackTrace();
-//                        }
-//                        //将file对象转换成Uri并启动照相程序
-//                        imageUri=Uri.fromFile(outputImage);
-//                        Intent camera = new Intent("android.media.action.IMAGE_CAPTURE");
-//                        camera.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);//指定图片输出位置
-//                        startActivityForResult(camera, RESULT_LOAD_IMAGE+1);
                         Intent intent=new Intent();
                         intent.setAction("android.media.action.STILL_IMAGE_CAMERA");
                         startActivity(intent);
+//                        Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                        startActivityForResult(intent,RESULT_LOAD_IMAGE+1);
                     }
                 });
 
@@ -132,33 +117,18 @@ public class ShareCircleActivity extends AppCompatActivity implements View.OnCli
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
 //            case RESULT_LOAD_IMAGE+1:
-//                if(resultCode==RESULT_OK){
-//                   Intent intent=new Intent("com.android.camera.action.CROP");//剪裁
-//                    intent.setDataAndType(imageUri,"image/*");
-//                    intent.putExtra("scale",true);
-//                    //设置宽高比例
-//                    intent.putExtra("aspectX",1);
-//                    intent.putExtra("aspectY",1);
-//                    //设置裁剪图片宽高
-//                    intent.putExtra("outputX",340);
-//                    intent.putExtra("outputY",340);
-//                    intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);
-//                    //广播刷新相册
-//                    Intent intentBc=new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-//                    intentBc.setData(imageUri);
-//                    this.sendBroadcast(intentBc);
-//                    startActivityForResult(intent,CROP_PHOTO);
-//                    break;
+//                String fileName = String.valueOf(System.currentTimeMillis());
+//                Bitmap bm = (Bitmap) data.getExtras().get("data");
+//                File file=new File(Environment.getExternalStorageDirectory()+"/photo_LJ/",fileName+".jpg");
+//                try {
+//                    FileOutputStream fos=new FileOutputStream(file);
+//                    bm.compress(Bitmap.CompressFormat.JPEG,90,fos);
+//                    iv_sharecircle.setImageBitmap(bm);
+//                } catch (FileNotFoundException e) {
+//                    e.printStackTrace();
 //                }
-//            case CROP_PHOTO:
-//
-//                    try {
-//                        Bitmap bm = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));
-//                        iv_sharecircle.setImageBitmap(bm);
-//                    } catch (FileNotFoundException e) {
-//                        e.printStackTrace();
-//                    }
 //                break;
+
             case RESULT_LOAD_IMAGE :
                 if (resultCode == Activity.RESULT_OK) {
                     Uri selectedImage = data.getData();
@@ -168,12 +138,14 @@ public class ShareCircleActivity extends AppCompatActivity implements View.OnCli
                     int columnIndex = c.getColumnIndex(filePathColumns[0]);
                     String picturePath = c.getString(columnIndex);
                     c.close();
-                   Bitmap bm= BitmapFactory.decodeFile(picturePath,null);
-                    iv_sharecircle.setImageBitmap(bm);
+                   Bitmap bm1= BitmapFactory.decodeFile(picturePath,null);
+                    iv_sharecircle.setImageBitmap(bm1);
                     ObjectAnimator oa=ObjectAnimator.ofFloat(ib_sharecircle,"translationX",0,iv_sharecircle.getWidth());
                     oa.setDuration(100);
                     oa.start();
                 }
+
+                break;
 
         }
 

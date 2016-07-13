@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -65,7 +66,7 @@ public class Fragment4 extends CommFragment {
 
         if (getActivity() instanceof NearActivity) {
             if (new Fragment4_1() != null) {
-                ((NearActivity) getActivity()).switchFragment(new Fragment4_1());
+                getActivity().getFragmentManager().beginTransaction().replace(R.id.fl_friendcircle,new Fragment4_1()).commit();
             }
         }
 
@@ -74,15 +75,13 @@ public class Fragment4 extends CommFragment {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.rb1_friendcircle:
-                        if (getActivity() instanceof NearActivity) {
-                            if (new Fragment4_1() != null) {
-                                ((NearActivity) getActivity()).switchFragment(new Fragment4_1());
-                            }
+                        if (new Fragment4_1() != null) {
+                            getActivity().getFragmentManager().beginTransaction().replace(R.id.fl_friendcircle,new Fragment4_1()).commit();
                         }
                         break;
                     case R.id.rb2_friendcircle:
-                        if (getActivity() instanceof NearActivity) {
-                            ((NearActivity) getActivity()).switchFragment(new Fragment4_2());
+                        if (new Fragment4_1() != null) {
+                            getActivity().getFragmentManager().beginTransaction().replace(R.id.fl_friendcircle,new Fragment4_2()).commit();
                         }
                         break;
                 }

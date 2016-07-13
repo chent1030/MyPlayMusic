@@ -41,10 +41,11 @@
             android:id="@+id/iv_head_me_info"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/head_me_info"/>
         <TextView
+            android:id="@+id/user_nickname"
             android:layout_toRightOf="@id/iv_head_me_info"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
@@ -52,6 +53,7 @@
             android:layout_height="wrap_content"
             android:text="用户名"/>
         <TextView
+            android:id="@+id/tv_user_wanyueaccount"
             android:layout_toRightOf="@id/iv_head_me_info"
             android:layout_marginTop="60dp"
             android:layout_marginLeft="20dp"
@@ -111,9 +113,9 @@
                 android:layout_marginLeft="40dp"/>
 
             <TextView
+                android:id="@+id/tv_user_wanyueaccount_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="KSDKJFHKJSHD"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="30dp"/>

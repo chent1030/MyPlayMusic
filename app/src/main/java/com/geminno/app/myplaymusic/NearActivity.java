@@ -15,13 +15,15 @@ import com.geminno.app.myplaymusic.fragment.Fragment5;
 public class NearActivity extends AppCompatActivity {
 
     private RadioGroup rg_near;
-    Fragment fragment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_near);
 
+        final int user_id= this.getIntent().getIntExtra("user_id",1);
+        System.out.println(user_id);
         rg_near = ((RadioGroup) findViewById(R.id.rg_near));
 
         getFragmentManager().beginTransaction().replace(R.id.fl_near,new Fragment1()).commit();
@@ -31,32 +33,34 @@ public class NearActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.rb_near:
-                        fragment=new Fragment1();
+                        Fragment1 fragment1=new Fragment1();
+                        getFragmentManager().beginTransaction().replace(R.id.fl_near,fragment1).commit();
                         break;
                     case R.id.rb_message:
-                        fragment=new Fragment2();
+                        Fragment2 fragment2=new Fragment2();
+                        getFragmentManager().beginTransaction().replace(R.id.fl_near,fragment2).commit();
                         break;
                     case R.id.rb_find:
-                        fragment=new Fragment3();
+                        Fragment3 fragment3=new Fragment3();
+                        getFragmentManager().beginTransaction().replace(R.id.fl_near,fragment3).commit();
                         break;
                     case R.id.rb_friendcircle:
-                        fragment=new Fragment4();
+                        Fragment4 fragment4=new Fragment4();
+                        getFragmentManager().beginTransaction().replace(R.id.fl_near,fragment4).commit();
                         break;
                     case R.id.rb_me:
-                        fragment=new Fragment5();
+                        Fragment5 fragment5=new Fragment5();
+                        fragment5.getUserId(user_id);
+                        getFragmentManager().beginTransaction().replace(R.id.fl_near,fragment5).commit();
                         break;
 
                 }
-                getFragmentManager().beginTransaction().replace(R.id.fl_near,fragment).commit();
 
             }
         });
 
-
-
     }
 
-    public void switchFragment(Fragment f){
-        getFragmentManager().beginTransaction().replace(R.id.fl_friendcircle,f).commit();
-    }
+
+
 }

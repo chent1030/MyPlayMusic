@@ -19,10 +19,27 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.geminno.app.myplaymusic.pojo.RegisterBean;
+import com.geminno.app.myplaymusic.utils.IpUtils;
 import com.geminno.app.myplaymusic.utils.MyUtils;
 import com.geminno.app.myplaymusic.utils.TimeCount;
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import com.jakewharton.rxbinding.widget.RxCompoundButton;
+import com.lidroid.xutils.HttpUtils;
+import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.RequestParams;
+import com.lidroid.xutils.http.ResponseInfo;
+import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.lidroid.xutils.http.client.HttpRequest;
 import com.mob.commons.SMSSDK;
+
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import cn.smssdk.EventHandler;
 import rx.functions.Action1;
@@ -45,13 +62,25 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private TimeCount time;
     String str_phone,str_str_phone;
     boolean flag=false;
+//    private Handler handler=new Handler(){
+//        @Override
+//        public void handleMessage(Message msg) {
+//            switch (msg.what) {
+//                case 1:
+//                    Gson gson=new Gson();
+//                    RegisterBean rb=gson.fromJson(((StringBuilder)msg.obj).toString(),RegisterBean.class);
+//                    System.out.println(rb.message);
+//                    break;
+//            }
+//        }
+//    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         //初始化SDK
-        cn.smssdk.SMSSDK.initSDK(this,"14b9581e3a77e","53aa664f91de74bf8af04dcfe2f71ec6");
+//        cn.smssdk.SMSSDK.initSDK(this,"14b9581e3a77e","53aa664f91de74bf8af04dcfe2f71ec6");
         initview();
 
     }
@@ -75,18 +104,18 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         btn_policy.setOnClickListener(this);
         btn_register.setOnClickListener(this);
 
-        final Handler handler=new Handler();
-        EventHandler eventHandler=new EventHandler(){
-            @Override
-            public void afterEvent(int event, int result, Object data) {
-                Message msg=new Message();
-                msg.arg1=event;
-                msg.arg2=result;
-                msg.obj=data;
-                handler.sendMessage(msg);
-            }
-        };
-        cn.smssdk.SMSSDK.registerEventHandler(eventHandler);//注册短信回调
+//        final Handler handler=new Handler();
+//        EventHandler eventHandler=new EventHandler(){
+//            @Override
+//            public void afterEvent(int event, int result, Object data) {
+//                Message msg=new Message();
+//                msg.arg1=event;
+//                msg.arg2=result;
+//                msg.obj=data;
+//                handler.sendMessage(msg);
+//            }
+//        };
+//        cn.smssdk.SMSSDK.registerEventHandler(eventHandler);//注册短信回调
 
 
         btn_verifycode = ((Button) findViewById(R.id.btn_verifycode));
@@ -143,7 +172,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     Toast.makeText(RegisterActivity.this,"发送成功",Toast.LENGTH_LONG).show();
                     // 下面的代码就是调用sdk的发送短信的方法，其中的“86”是官方中定义的，代表中国的意思
                     // 第二个参数表示的是需要发送短信的手机号
-                    cn.smssdk.SMSSDK.getVerificationCode("86",str_phone);
+//                    cn.smssdk.SMSSDK.getVerificationCode("86",str_phone);
                     str_str_phone=str_phone;
                     time.start();
                 }
@@ -151,18 +180,95 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             case R.id.btn_register:
 //                String str_et2=et2.getText().toString();
 //                cn.smssdk.SMSSDK.submitVerificationCode("86",str_str_phone,str_et2);
-
-                String et3_3=et3.getText().toString();
-                String et4_4=et4.getText().toString();
+               final String et1_1=et1.getText().toString();
+                final String et3_3=et3.getText().toString();
+                final String et5_5=et5.getText().toString();
+                final String et4_4=et4.getText().toString();
                 if(et3_3.length()<6||et3_3.length()>=12){
                     Toast.makeText(RegisterActivity.this,"密码为6-12个字符",Toast.LENGTH_LONG).show();
                 }else{
                                 if(et3_3.equals(et4_4)) {
-                                    Toast.makeText(RegisterActivity.this, "注册成功，跳转", Toast.LENGTH_LONG).show();
+
+                                    HttpUtils httpUtils=new HttpUtils();
+                                    RequestParams params=new RequestParams();
+                                    params.addBodyParameter("telephone",et1_1);
+                                    params.addBodyParameter("password",et3_3);
+                                    params.addBodyParameter("nickname",et5_5);
+
+                                    httpUtils.send(HttpRequest.HttpMethod.POST
+                                            , IpUtils.IpAddress+"/WanYueAPP/index.php/home/user/register"
+                                            ,params, new RequestCallBack<String>() {
+                                                @Override
+                                                public void onLoading(long total, long current, boolean isUploading) {
+                                                    Toast.makeText(RegisterActivity.this,"注册中",Toast.LENGTH_LONG).show();
+                                                }
+
+                                                @Override
+                                                public void onSuccess(ResponseInfo<String> responseInfo) {
+                                                    System.out.println(responseInfo.result);
+                                                    Gson gson=new Gson();
+                                                    RegisterBean registerBean=gson.fromJson(responseInfo.result, RegisterBean.class);
+                                                    System.out.println(registerBean.code);
+                                                    System.out.println(registerBean.id);
+                                                    Toast.makeText(RegisterActivity.this,registerBean.message,Toast.LENGTH_LONG).show();
+                                                }
+                                                @Override
+                                                public void onFailure(HttpException e, String s) {
+                                                    Toast.makeText(RegisterActivity.this,"访问失败",Toast.LENGTH_LONG).show();
+                                                }
+                                            });
+//                                    new Thread(new Runnable() {
+//                                        @Override
+//                                        public void run() {
+//                                            String path="http://192.168.30.33:80/WanYueAPP/index.php/home/user/register";
+//
+//                                            try {
+//                                                URL url=new URL(path);
+//                                                HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+//                                                conn.setRequestMethod("POST");
+//                                                conn.setConnectTimeout(5000);
+//                                                conn.setReadTimeout(3000);
+//                                                //设置请求常用属性
+//
+//                                                String data="telephone="+et1_1+"&password="+et3_3+"&nickname="+et5_5;
+//                                                conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded");
+//                                                conn.setRequestProperty("Content-Length",data.length()+"");
+//
+//                                                //打开输出流
+//                                                conn.setDoOutput(true);
+//                                                OutputStream os=conn.getOutputStream();
+//                                                os.write(data.getBytes());
+//
+//                                                int code=conn.getResponseCode();
+//                                                System.out.println(code);
+//
+//                                                if(code==200){
+//                                                    InputStream is=conn.getInputStream();
+//                                                    byte[] bytes=new byte[1024];
+//                                                    int length=-1;
+//                                                    StringBuilder sb=new StringBuilder("");
+//                                                    while((length=is.read(bytes))!=-1){
+//                                                        sb.append(new String(bytes,0,length));
+//                                                    }
+//
+//                                                    Message msg=handler.obtainMessage();
+//                                                    msg.obj=sb;
+//                                                    msg.what=1;
+//                                                    handler.sendMessage(msg);
+//
+//                                                }
+//
+//                                            } catch (Exception e) {
+//                                                e.printStackTrace();
+//                                            }
+//
+//                                        }
+//                                    }).start();
                                 }else{
                                     Toast.makeText(RegisterActivity.this, "两次输入的密码不一致", Toast.LENGTH_LONG).show();
                                 }
                 }
+
                 break;
         }
     }
@@ -170,7 +276,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     protected void onDestroy() {
-        cn.smssdk.SMSSDK.unregisterAllEventHandler();
+//        cn.smssdk.SMSSDK.unregisterAllEventHandler();
         super.onDestroy();
     }
 

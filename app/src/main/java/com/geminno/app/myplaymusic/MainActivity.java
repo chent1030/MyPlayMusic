@@ -10,6 +10,17 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.geminno.app.myplaymusic.pojo.UserBean;
+import com.geminno.app.myplaymusic.utils.IpUtils;
+import com.google.gson.Gson;
+import com.lidroid.xutils.HttpUtils;
+import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.RequestParams;
+import com.lidroid.xutils.http.ResponseInfo;
+import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.lidroid.xutils.http.client.HttpRequest;
 
 public class MainActivity extends AppCompatActivity implements TextWatcher,View.OnClickListener{
 
@@ -92,8 +103,38 @@ public class MainActivity extends AppCompatActivity implements TextWatcher,View.
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bt_login:
-                startActivity(new Intent(this,NearActivity.class));
-                this.finish();
+                HttpUtils httpUtils=new HttpUtils();
+                RequestParams params=new RequestParams();
+                params.addBodyParameter("telephone",et_phone.getText().toString());
+                params.addBodyParameter("password",et_password.getText().toString());
+
+                httpUtils.send(HttpRequest.HttpMethod.POST
+                        , IpUtils.IpAddress+"/WanYueAPP/index.php/home/user/login"
+                        ,params
+                        , new RequestCallBack<String>() {
+
+                            @Override
+                            public void onSuccess(ResponseInfo<String> responseInfo) {
+                                Gson gson=new Gson();
+                                UserBean userBean=gson.fromJson(responseInfo.result, UserBean.class);
+                                UserBean.User user=userBean.data;
+                                Toast.makeText(MainActivity.this,userBean.message,Toast.LENGTH_LONG).show();
+                                if(userBean.code==200) {
+                                    Intent intent = new Intent(MainActivity.this, NearActivity.class);
+                                    intent.putExtra("user_id", user.user_id);
+                                    IpUtils.userid=user.user_id;
+                                    System.out.println(user.user_id);
+                                    startActivity(intent);
+                                    MainActivity.this.finish();
+                                }
+                            }
+
+                            @Override
+                            public void onFailure(HttpException e, String s) {
+
+                            }
+                        });
+
                 break;
         }
     }
